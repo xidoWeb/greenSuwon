@@ -1,0 +1,12 @@
+/* table_02.css */
+
+table, tr, th, td{
+	border-width:1px;
+	border-style:solid;
+	border-color:#974;
+	border-spacing:0;
+	border-collapse: collapse;
+}
+th,td{padding:0.3rem;}
+table{width:500px;}
+thead{background-color: #fda;}
