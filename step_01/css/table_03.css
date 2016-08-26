@@ -1,0 +1,53 @@
+/* table_03.css */
+h1{border-bottom:1px solid #999; text-align: center; width: 100%; padding-bottom: .5rem; }
+/* -------------------  setting ------------------- */
+table, tr, td, th, thead, tbody, tfoot{border-width:1px;
+/*
+	border-style: solid; 
+	border-color: #259;
+	border-spacing: 0;
+*/
+	border-collapse: collapse;
+	border-left:0;
+	border-right:0;
+
+}
+table{width: 700px; margin: 2rem auto;}
+td{padding:0.5rem;}
+
+.bold_text{ font-weight:bold;}
+.gray_text{ color:#777;}
+
+/* -------------------  design ------------------- */
+caption{font-size: 0;}
+
+thead{border-bottom:3px solid #888; padding-bottom: .3rem;}
+thead th{text-align: left;}
+.border_line_none_top{border-top:0;}
+.border_line_none_bottom{border-bottom:0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
