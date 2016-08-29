@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>펜션 예약 문의</title>
+</head>
+<body>
+	<h1>펜션 예약</h1>
+	<form action="" method="post">
+		<fieldset>
+			<legend>예약 문의</legend>
+			<h2>작성자 입력</h2>
+			<ul>
+				<li>	<label for="author">작성자</label>	</li>
+				<li>	<label for="password">비밀번호</label>	</li>
+				<li>	<label for="title">제목</label>	</li>
+				<li>	<label for="date">예약일</label>	</li>
+			</ul>
+			<ul>
+				<li> <input type="text" name="author" id="author" value="" /> </li>
+				<li> <input type="password" name="password" id="password" value="" /> </li>
+				<li> <input type="text" name="title" id="title" value="" /> </li>
+				<li> <input type="text" name="date" id="date" value="" /> </li>
+			</ul>
+			
+			<h2>예약 선택</h2>
+			<p>	<label for="single">예약하실 객실 형태를 선택하세요.</label></p>
+			
+			<input type="radio" name="roomType" id="single" value="single">
+			<label for="single">single</label>
+			<input type="radio" name="roomType" id="double" value="double">
+			<label for="double">double</label>
+			<input type="radio" name="roomType" id="twin" value="twin">
+			<label for="twin">twin</label>
+			
+			<p><label for="floor">예약하실 객실의 층 수를 선택하세요.</label></p>
+			<select name="" id="floor">
+				<option value="1floor">1층</option>
+				<option value="2floor">2층</option>
+				<option value="3floor">3층</option>
+				<option value="4floor">4층</option>
+				<option value="5floor">5층</option>
+				<option value="eventfloor">별실</option>
+			</select>
+			
+			<h2>기타 옵션 선택</h2>
+			<p>기타 패키지 옵션을 선택하세요.</p>
+			<input type="checkbox" checked="checked" id="blackfirst" name="option" value="blackfirst" />
+			<label for="blackfirst">조식</label>
+			<input type="checkbox" id="babeque" name="option" value="babeque" />
+			<label for="babeque">바베큐</label>
+			<input type="checkbox" id="pickUp" name="option" value="pickUp" />
+			<label for="pickUp">픽업</label>
+			
+		</fieldset>
+		<fieldset>
+			<legend>확인 또는 취소버튼</legend>
+			<input type="submit" name="ok" id="ok" value="확인 및 전송">
+			<input type="reset" name="cancle" id="cancle" value="취소">
+		</fieldset>
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
