@@ -12,7 +12,12 @@
 	<link rel="apple-touch-icon" href="favicon.png">
 -->
 	<title>form 기능 이해하기</title>
-	<style type="text/css"></style>
+	<style type="text/css">
+		*:focus{outline:3px solid #fa0; outline-offset:0.3rem; position: relative; z-index: 100;}
+		button{width: 100px;}
+		button>img{width: 100%;}
+		
+	</style>
 	<script type="text/javascript"></script>
 </head>
 <body>
@@ -21,9 +26,9 @@
 		<fieldset>
 			<legend>입력의 기능</legend>
 			<label for="user">아이디를 입력하세요</label>
-			<input type="text" id="user" name="user" maxlength="5" value="" />
+			<input type="text" id="user" name="user" maxlength="5" value="" /><br />
 			<label for="pwd">비밀번호를 입력하세요</label>
-			<input type="password" id="pwd" name="pwd" maxlength="10" value="" />
+			<input type="password" id="pwd" name="pwd" maxlength="10" value="" /><br />
 			
 			<label for="secr">암묵적 방식의 label 처리
 				<input type="text" id="secr" name="secr" maxlength="10" value="" />
@@ -32,14 +37,64 @@
 		
 		<fieldset>
 			<legend>선택의 기능</legend>
+			<p>좋아하는 성별을 선택하세요 </p>
+			
+			<input type="radio" name="sex" id="male" value="male" />
+			<label for="male">남성</label>
+			<input type="radio" name="sex" id="female" value="female" />
+			<label for="female">여성</label>
+			<hr />
+			
+			<p>좋아하는 음식을 선택하세요</p>
+			<input type="checkbox" name="food" id="chicken" value="chicken" />
+			<label for="chicken">치킨</label>		
+			<input type="checkbox" name="food" id="chobab" value="chobab" />
+			<label for="chobab">초밥</label>
+			<input type="checkbox" name="food" id="dim" value="dim" />
+			<label for="dim">왕만두</label>
+			<input type="checkbox" name="food" id="soju" value="soju" />
+			<label for="soju">소주</label>
 		</fieldset>
 		
 		<fieldset>
 			<legend>버튼의 기능</legend>
+			<input type="submit" name="ok" id="ok" value="동의 및 확인" /><!--label-->
+			<input type="reset" name="cancle" id="cancle" value="취소" />
+			<input type="image" src="favicon.png" name="img" id="img" value="이미지" />
+			<input type="file" name="fileOrder" id="fileOrder" value="" />
+			<input type="button" name="btn" id="btn" value="버튼" />
 		</fieldset>
 		
 		<fieldset>
 			<legend>기타 멀티기능</legend>
+			 <label for="multiLineText">여러줄 작성하는 기능</label> 
+			<textarea name="multiLineText" id="multiLineText" value="" cols="40" rows="5" readonly="readonly">
+간단한 계약서를 작성하도록 합니다.
+1. sadasdf
+2. sdafsdf
+3. 4sdafasdf
+4. text
+			</textarea>
+			
+			<label for="programSelector">주 사용 프로그램을 선택하세요</label>
+			<select name="programSelector" id="programSelector">
+				<option>선택하세요</option>
+				<optgroup label="graphic">
+					<option value="photoshop">포토샵</option>
+					<option value="illustrator">일러스트</option>	
+				</optgroup>
+				<optgroup label="web programming">
+					<option value="html">html</option>
+					<option value="html">css</option>
+					<option value="jquery">jquery</option>
+				</optgroup>
+			</select>
+			
+			<button  name="" type="submit">확인</button>
+			<button  name="" type="reset">취소</button>
+			<button  name="" type="button">다양한</button>
+			<button name="" ><img src="./favicon.png" alt="이미지확인"></button>
+			
 		</fieldset>
 	</form>
 </body>
