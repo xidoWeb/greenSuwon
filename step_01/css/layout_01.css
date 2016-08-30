@@ -1,14 +1,20 @@
 /* layout_01.css */
 /*
 	16px == 12pt == 100% == 1em(font:상대값, 박스: 최초설정) == 1rem
+	*: 전체라는 뜻
 */
+/* 웹페이지 초기화 */
 *{margin: 0; padding: 0; border: 0;}
 body{margin:0;}
+
+/* design */
 #box{width:800px; height:500px; margin:50px auto;}
 /* .header -------------------------------------- */
 .header{width:100%; height:100px; background-color:#f06;}
-	h1{}
-	.navigation{}
+	h1{width: 70px; height: 70px; background-color: #afa; float: left;
+		margin:15px;}
+	.navigation{width: 450px; height: 50px; background-color: #ccc;
+		float: right; margin-top:35px; margin-right:15px;}
 
 /* .section -------------------------------------- */
 .section{width:100%; height:300px; background-color:#fa0;}
