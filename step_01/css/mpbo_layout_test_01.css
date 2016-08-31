@@ -22,8 +22,50 @@ ul, ol, li{list-style: none;}
 	.lnb_03{background-color:#aff;}
 	.lnb_04{background-color:#fca;}
 
-/* .section */
-.section{width: 100%; height:1185px;
-	background-color: #8fc;}
+/* .section ------------------ */
+.section{width: 100%; height:auto;
+	background-color: #8fc; padding-top: 10px;}
+.section > h2{width: 370px; height: 110px; background-color:#fcc; 
+	margin:0 auto; margin-bottom: 10px;}
+.content{width:100%; height:auto; /*background-color:#ccc;*/ }
+/* .content 내부의 자식요소들의 높이 변형을 고려하여  clear:both;(float초기화) 처리*/
+.content:after{content:" "; display: block; clear: both;}
+.content>li{width: 25%; height: 300px; float: left;}
+	.con_01{/*width:25%; height:300px;*/ background-color:#f77; /*float:left;*/}
+	.con_02{/*width:25%; height:300px;*/ background-color:#ff7; /*float:left;*/}
+	.con_03{/*width:25%; height:300px;*/ background-color:#f7f; /*float:left;*/}
+	.con_04{/*width:25%; height:300px;*/ background-color:#7ff; /*float:left;*/}
+
+.article{width: 100%; height:auto;/*	background-color: #acc;*/}
+/* 자식요소의 float으로인한 높이값 할당(clear) */
+.article:after{content:" "; display: block; clear: both;}
+
+.article>li{width: 25%; height: 300px;	
+	float: left;}
+.article>.ar_01{width:50%; height:600px; background-color:#1fd;}
+	.ar_02{background-color:#5f9;}
+	.ar_03{background-color:#9f9;}
+	.ar_04{background-color:#cf5;}
+	.ar_05{background-color:#ff1;}
+
+/* .footer ---------------- */
 .footer{width:1150px; height: 215px;
 	background-color: #acf; padding:0 25px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
