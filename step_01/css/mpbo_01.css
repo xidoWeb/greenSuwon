@@ -1,11 +1,13 @@
 /* mpbo_01.css */
 *{margin:0; padding:0; border:0;}
 h1{width: 100%; height: 2rem; font-size: 1.5rem; 	text-align: center;}
-.container{width: 100%; height:auto; background-color:#ccc;}
-h2{font-size: 0;}
+.container{width: 100%; height:auto; background-color:#ccc; margin-bottom:1rem;}
+h2{font-size:1rem;}
 .container > ul{width: 100%; height: auto;}
 .container > ul:after{content:""; display: block; clear: both;}
 .container > ul > li{	width:100px; height:100px; float: left; list-style: none;}
+
+/* margkn, padding, border, outline 기초 이해----------------------*/
 .normal{background-color:#fac;}
 /* margin: 여백- 외부여백 다른 객체와의 공간값 */
 .margin{background-color:#aac; margin:50px;}
@@ -21,12 +23,24 @@ h2{font-size: 0;}
 /*outline-width:50px; outline-style:solid; outline-color:#06f;*/}
 .normal2{background-color:#0a1;}
 
+/* margin:디테딜 부분이해하기 */
+.m_01{background-color:#fa5; margin:20px;}/* 4방향 모두*/
+.m_02{background-color:#8fa; margin:20px 40px;}/* 위아래  좌우 */
+.m_03{background-color:#1af; margin:10px 50px 100px;}/* 위  좌우  아래*/
+.m_04{background-color:#ff6; margin:10px 20px 30px 40px;} /* 시계방향으로 돈다!!! */
+.m_05{background-color:#9ff; margin:30px; margin-bottom:10px;}
 
+/* marginh-top:위를 띄우겠다;  margin-left:왼쪽을 띄우겠다; 
+	 margin-right:오른쪽 띄우겠다;  margin-bottom:아래를 띄우겠다; */
 
-
-
-
-
+/*border 의 이해*/
+.b_line{background-color:#777; color:#fff; border:10px solid #fa0; margin:5px;}
+.b_01{border-top:20px solid #fff;}
+.b_02{border-bottom-color:#333;}
+.b_03{border-left-style:dotted; border-left-color:#f00;}
+.b_04{}
+.b_05{}
+/* outline-top:10px solid #fff; outline은 일부분으로는 사용할 수가 없다!!!! */
 
 
 
