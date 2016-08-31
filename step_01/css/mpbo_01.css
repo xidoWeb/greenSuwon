@@ -7,8 +7,31 @@ h2{font-size: 0;}
 .container > ul:after{content:""; display: block; clear: both;}
 .container > ul > li{	width:100px; height:100px; float: left; list-style: none;}
 .normal{background-color:#fac;}
-.margin{background-color:#aac;}
-.padding{background-color:#159;}
-.border{background-color:#cca;}
-.outline{background-color:#fa8;}
+/* margin: 여백- 외부여백 다른 객체와의 공간값 */
+.margin{background-color:#aac; margin:50px;}
+/* padding: 여백- 내부여백 나자신이 커져서 생기는 공간값, 자신의 배경색이 동일하게 처리 */
+.padding{background-color:#159; padding:50px;}
+/* border: 외곽선- 자신의 객체에서 테두리 라인이 생기는 것, 라인색은 다른색으로 변경가능
+	  - 크기는 존재, 부피도 존재*/
+.border{background-color:#cca; border:50px solid #3ca;
+	/*border-width:50px; border-style:solid; border-color:#3ca;*/}
+/* outline: 외곽선- 자신의 객체에 테두리 라인이 생기는 것, 라인색은 다른색으로 변경가능 
+		- 크기는 존재, 부피는 없는 형태: 접근성 사용시 표기*/
+.outline{background-color:#fa8; outline:50px solid #06f;
+/*outline-width:50px; outline-style:solid; outline-color:#06f;*/}
 .normal2{background-color:#0a1;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
