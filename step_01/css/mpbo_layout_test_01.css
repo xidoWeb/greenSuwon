@@ -1,8 +1,12 @@
 /* mpbo_layout_test_01.css */
+/*reset*/
 body{margin:0;}
 div,ul,ol,li{margin: 0; padding: 0; }
 ul, ol, li{list-style: none;}
+.clearfix, clearfix:before,
+.clearfix:after{content:" "; display: block; clear: both;}
 
+/*design*/
 .container{width: 1200px; height: 1800px; 
 	margin:0 auto;}
 .header{width:1150px; height: 400px;
@@ -29,7 +33,7 @@ ul, ol, li{list-style: none;}
 	margin:0 auto; margin-bottom: 10px;}
 .content{width:100%; height:auto; /*background-color:#ccc;*/ }
 /* .content 내부의 자식요소들의 높이 변형을 고려하여  clear:both;(float초기화) 처리*/
-.content:after{content:" "; display: block; clear: both;}
+/*.content:after{content:" "; display: block; clear: both;}*/
 .content>li{width: 25%; height: 300px; float: left;}
 	.con_01{/*width:25%; height:300px;*/ background-color:#f77; /*float:left;*/}
 	.con_02{/*width:25%; height:300px;*/ background-color:#ff7; /*float:left;*/}
@@ -38,7 +42,7 @@ ul, ol, li{list-style: none;}
 
 .article{width: 100%; height:auto;/*	background-color: #acc;*/}
 /* 자식요소의 float으로인한 높이값 할당(clear) */
-.article:after{content:" "; display: block; clear: both;}
+/*.article:after{content:" "; display: block; clear: both;}*/
 
 .article>li{width: 25%; height: 300px;	
 	float: left;}
