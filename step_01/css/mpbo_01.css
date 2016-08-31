@@ -42,6 +42,32 @@ h2{font-size:1rem;}
 .b_05{}
 /* outline-top:10px solid #fff; outline은 일부분으로는 사용할 수가 없다!!!! */
 
+/* 우선순위: 
+		* css는 절차지향이기때문에 나중에 쓴내용으로 변경처리되나, 
+		* 우선순위가 있어 특수한경우 순위를 따지게된다.
+
+tag(type) < class name < id name < 상위에서부터 지칭 < !important (단, 최대한 쓰지않기를...)
+
+li{color:transparent !important;}
+ul>li{color:#0af;}
+li#text{color:#fa0;} 
+li.text{color:#ccc;} 
+li{color:#fff;}  
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
