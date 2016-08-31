@@ -3,7 +3,8 @@
 body{margin:0;}
 div,ul,ol,li{margin: 0; padding: 0; }
 ul, ol, li{list-style: none;}
-.clearfix, clearfix:before,
+.clearfix, 
+clearfix:before,
 .clearfix:after{content:" "; display: block; clear: both;}
 
 /*design*/
