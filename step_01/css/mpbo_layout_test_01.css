@@ -1,0 +1,29 @@
+/* mpbo_layout_test_01.css */
+body{margin:0;}
+div,ul,ol,li{margin: 0; padding: 0; }
+ul, ol, li{list-style: none;}
+
+.container{width: 1200px; height: 1800px; 
+	margin:0 auto;}
+.header{width:1150px; height: 400px;
+	background-color: #3a7; padding:0 25px;}
+	.unb{width: 230px; height: 50px; 
+		background-color: #fa0; float: right;}
+	.gnb{width: 100%; height: 62px; 
+		background-color: #fa0; float: left;}
+	.lnb{width: 100%; height: 92px; 
+		background-color: #fff; float: left; 
+		margin-top: 192px;}
+	.lnb > ul{width: 100%; height: 100%; }
+	.lnb > ul > li{width: 25%; height: 100%; 
+			float: left;}
+	.lnb_01{background-color:#acf;}
+	.lnb_02{background-color:#fcf;}
+	.lnb_03{background-color:#aff;}
+	.lnb_04{background-color:#fca;}
+
+/* .section */
+.section{width: 100%; height:1185px;
+	background-color: #8fc;}
+.footer{width:1150px; height: 215px;
+	background-color: #acf; padding:0 25px}
