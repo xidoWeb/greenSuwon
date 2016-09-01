@@ -123,6 +123,131 @@
 		- title : link기능과 같음
 
 ### style_기본형태(간단한 내용)
+#### 선택자
+ - type 선택자: 태그(요소, element)명을 직접 선택해서 사용하는 방법 `h1{}`, `ul{}`
+ - id 선택자: 속성중에 id이름값을 선택해서 사용하는 방법 `#box{}`
+ 	* id이름값은 body내에서 여러번 사용할 수가 없다~~~~!!!
+	* 이름사용시 첫글자 숫자 X,영문, 첫글자 소문자, 단어와 단어사이는 띄워쓰기 X(_ or 첫글자 대문자)
+	* 특수문자 사용X (_, $)
+ ```html
+	<style>
+		#box{}
+	</style>
+ 	<body>
+		<div id="box"></div>
+	</body>
+ ```
+ - class선택자: 속성중에 class 이름값을 선택해서 사용하는 방법 `.test{}`
+ 	* id와 동일한 네이밍기법을 사용( 전통방식은 단어와 단어사이 - 표기 )
+```html
+<style>
+	.test{}
+</style>
+<body>
+	<div class="test"></div>
+</body>
+```
+ - 가상 선택자: 실제 존재하는 형태가아닌, 별도의 기능을 활요한 선택자 
+ 	* :hover  		- 마우스 올려놓은 상태
+	* :active 		- 마우스 왼버튼을 누르고 있는 상태
+	* :visited		- 웹페이지 방문한 흔적을 남길 때
+	* :linked			- 링크속성을 가진 형태(기본형태이므로 잘 사용X)
+	* :before			- 가상 클래스라고도 하며, 객체(요소)의 앞부분에 존재하게하는 기능(content:;속성필수)
+	* :after			- 가상 클래스라고도 하며, 객체(요소)의 뒷부분에 존재하게하는 기능(content:;속성필수)
+	
+ - 자손 선택자: 모든 태그들은 부모/자식/형제 등의 형태를 가지게 되는데 이때, 자식의 자식요소로 처리되는것들을 일컬어 자손 선택자라고 한다.(자식의 자식이..... 아~~~주 하위레벨이어도 통용)
+ 	* 요소와 그후손 요소 사이에 아무기호도 없이 띄어쓰기 사용
+```html
+<style>
+	ul li{background-color:#f07;} // ul내부의 li모든것
+	ol a{background-color:#fac;} // ol 내부의 a모든것
+</style>
+<body>
+	<div>
+		<ul>
+			<li>
+				<ol>
+					<li>
+						<a href="">test</a>
+					</li>
+				</ol>
+			</li>
+		</ul>
+		<ol>
+				<li>
+					<a href="">test</a>
+				</li>
+		</ol>
+	</div>
+</body>
+```
+ - 자식 선택자: 반드시 부모/자식간의 상황이 만들어져야만 활성화되는 형태
+ 	* `ul > li{}` -> ul 자식(>) li를 선택하겠다!!
+```html
+<style>
+	ul > li{background-color:#f07;} // ul내부의 li모든것
+div	ol>li>a {background-color:#fac;} // ol 내부의 a모든것
+</style>
+<body>
+	<div>
+		<ul>
+			<li>
+				<ol>
+					<li>
+						<a href="">test</a>
+					</li>
+				</ol>
+			</li>
+			<li><a href=""></a></li>
+			<li></li>
+		</ul>
+	</div>
+		<ol>
+				<li>
+					<a href="">test</a>
+				</li>
+		</ol>
+</body>	
+	
+ - 속성 선택자: 각 요소(태그)의 속성을 선택하게 하는 기능
+	* [attribute]   						속성(attribute)을 선택
+	* [attribute="value"]   		속성값이 value인것을 선택
+	* [attribute~="value"]   		속성값이 value를 포함하는 것(단어)
+	* [attribute|="value"]   		속성값이 value로 시작하거나 포함하는것(단어)
+	* [attribute^="value"]   		속성값이 value로 시작하는것
+	* [attribute$="value"]   		속성값이 value로 끝나는 것
+	* [attribute*="value"]   		속성값이 value라는 내용을 담고있는것
+```html
+<style>
+.container{}
+a[href="#"]{color:#f00;}
+a[href!="#"]{color:#00f;}
+a[href^="http"]{}
+</style>
+<body>
+	<div class="container">
+		<ul id="box">
+			<li><a href="#">link</a></li>
+			<li><a href="https://naver.com">link</a></li>
+			<li><a href="http://ui.daum.net">link</a></li>
+			<li><img src="test.jpg" alt="테스트 이미지"></li>
+		</ul>
+	</div>
+</body>
+```
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
