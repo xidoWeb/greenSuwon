@@ -137,8 +137,10 @@
 		<div id="box"></div>
 	</body>
  ```
+ 
  - class선택자: 속성중에 class 이름값을 선택해서 사용하는 방법 `.test{}`
  	* id와 동일한 네이밍기법을 사용( 전통방식은 단어와 단어사이 - 표기 )
+	
 ```html
 <style>
 	.test{}
@@ -157,6 +159,7 @@
 	
  - 자손 선택자: 모든 태그들은 부모/자식/형제 등의 형태를 가지게 되는데 이때, 자식의 자식요소로 처리되는것들을 일컬어 자손 선택자라고 한다.(자식의 자식이..... 아~~~주 하위레벨이어도 통용)
  	* 요소와 그후손 요소 사이에 아무기호도 없이 띄어쓰기 사용
+	
 ```html
 <style>
 	ul li{background-color:#f07;} // ul내부의 li모든것
@@ -181,8 +184,10 @@
 	</div>
 </body>
 ```
+
  - 자식 선택자: 반드시 부모/자식간의 상황이 만들어져야만 활성화되는 형태
  	* `ul > li{}` -> ul 자식(>) li를 선택하겠다!!
+	
 ```html
 <style>
 	ul > li{background-color:#f07;} // ul내부의 li모든것
@@ -208,7 +213,8 @@ div	ol>li>a {background-color:#fac;} // ol 내부의 a모든것
 				</li>
 		</ol>
 </body>	
-	
+```
+
  - 속성 선택자: 각 요소(태그)의 속성을 선택하게 하는 기능
 	* [attribute]   						속성(attribute)을 선택
 	* [attribute="value"]   		속성값이 value인것을 선택
@@ -217,6 +223,7 @@ div	ol>li>a {background-color:#fac;} // ol 내부의 a모든것
 	* [attribute^="value"]   		속성값이 value로 시작하는것
 	* [attribute$="value"]   		속성값이 value로 끝나는 것
 	* [attribute*="value"]   		속성값이 value라는 내용을 담고있는것
+	
 ```html
 <style>
 .container{}
