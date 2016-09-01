@@ -1,2 +1,30 @@
 /* layout_test_02.css */
+body, h1, h2,h3,h4,h5,h6, div, ul, ol, li {margin: 0; padding: 0;}
+.container{width: 960px; height: auto; margin: 0 auto;}
+/*#header*/
+	#header{width: 820px; height: 165px; background-color: #0af; padding:25px 70px 10px; margin-bottom: 10px;}
+		h1{width: 100px; height: 100%; background-color: #333;
+		float: left;}
+		.unb{width: 180px; height: 70px; background-color: #555; float:right; margin-bottom:25px;}
+		.gnb{width: 640px; height: 70px; background-color: #555; float:right;}
+
+/*#content*/
+	#content{width: 100%; height: 10rem; background-color:#dfdfdf;}
+	#footer{width: 100%; height: 150px; background-color: #07f;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
