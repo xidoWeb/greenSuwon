@@ -1,0 +1,59 @@
+/* selected.css */
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, div, ul, ol,  li{margin:0; padding:0;
+	font-size:100%;}
+img{border:0;}
+ul, ol, li{list-style: none;}
+a{color:#777; text-decoration: none;}
+/*a:visited{color:#fa0;}*/
+a:hover{color:#f07; font-size:100%;}
+a:active{color:#333; text-decoration:underline;}
+
+
+/* setting */
+.clearfix{display: block; clear: both;}
+.clearfix:before, .clearfix:after{content:" "; display: block; clear: both;}
+
+/* design */
+/* 16px = 12pt = 100% =  1em = 1rem */
+#wrap{width: 960px; min-height: 10rem; height:auto; background-color: #ccc; margin: 0 auto;}
+#wrap>div{width:96%; padding:20px 2%;}
+/* #header -------------------- */
+	#header{height:100px; background-color:#dfdfdf; border-bottom:1px solid #f07;}
+/*	#header:hover{background-color: #cacaca;}*/
+/*	#header:hover h1{background-color: #f07;}*/
+
+		h1{width:150px; height:70px; float: left; background-color: #fff; margin-top:15px;}
+		h1>a{width: 100%; height: 100%; background-color: #fa0; display: block; 
+			font-size:50px;	line-height:70px; text-align: center;}
+		.gnb{width: 700px; height: 40px; float: right; background-color: #fff; margin-top:50px;}
+		/* overflow: hidden; 지정영역 넘침시 숨김처리(hidden | scroll | auto)*/
+		.gnb>h2{width:0; height:0; overflow: hidden;}
+		.gnb>ul{width: 100%; height: 100%;}
+		/*  text-align: center; 좌/우 정렬  (left | right | center | justify : 양쪽정렬 2줄이상 ) */
+		.gnb li{width:20%; height: 100%; float: left; text-align: center; }
+		.gnb li a{line-height:40px;}
+/* #content -------------------- */
+	#content{min-height:80px; height:auto;}
+	#content > h2{font-size:1.2rem; color:#f07;}
+	#content > h2:after{content:"----------------------------------------"; color:#576757;}
+	.article{width:85%; height:20rem; margin-left:7.5%; margin-bottom:3rem; background-color:rgba(0,200,150,0.5);}
+	.section{width:85%; height:10rem;  margin-left:7.5%; background-color:hsla(180, 60%, 50%, 0.5);}
+	
+/* #footer -------------------- */
+	#footer{height:100px; background-color:#576757;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
