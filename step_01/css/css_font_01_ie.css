@@ -1,0 +1,14 @@
+/* css_font_01_ie.css */
+
+html, body{font-size:100%; zoom:1;}
+
+h1{font-size:16px;}
+
+h1>a{font-size:32px;}
+h1>a>span{font-size:16px;}
+h1>a>span>em{font-size:8px;}
+.font_01{}
+.font_02{}
+.font_03{}
+.font_04{}
+.font_05{}

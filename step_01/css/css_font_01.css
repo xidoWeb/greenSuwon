@@ -1,0 +1,27 @@
+/* css_font_01.css */
+
+/*최초의 값으로 설정시: 16px(절대값) = 12pt(절대값) = 100% = 1em(부모기준)= 1rem(최초기준) */
+/* em단위는 em태그와는 다르다!!
+	* 자신의 부모태그의 크기값에대해 상대값으로 인지하는 형태를 가진다.
+	* 단, 폰트의 크기값에 대한 설정값으로만 부모기준 크기
+ */
+html, body{font-size:100%;}
+h1,h2,h3,h4,h5,h6,p,div,span,ul,li,ol,dl,dt,dd{font-size:100%;}
+
+h1{color:#0ac;  font-size:1rem;}
+h1:hover{color:#aac;}
+h1>a{color:inherit; text-decoration:none;font-size:2rem;}
+h1>a>span{font-size:1rem;}
+h1>a>span>em{font-size:0.5rem;}
+.font_01{font-style:italic;}/* italic normal */
+.font_02{font-weight:bold;}/* thin light normal bold bolder 100 ~ 400 ~ 900 */
+.font_03{font-family: "myriad pro", arial, nanumGothic, "돋움", dotum, sans-serif ;}
+ /* 영문기준 원하는 포트 , 다른 대체폰트 , 한글폰트, 대체폰트 , 형식
+ 	* 띄어쓰기로 표현된 두개이상의 단어로되어있는 폰트명은 "" 를 표기해서 감싼다. */
+.font_04{font-size:2em; line-height:1.2; height: 30px; background-color: #ccc; margin-bottom: 150px;}
+.font_05{color:#074;  
+	font:normal bold 1em/1.7 "myriad pro", sans-serif;
+	}
+	/* 
+	font: font-style font-weight font-size / line-height font-family ;
+	*/
