@@ -15,13 +15,12 @@ h1>a>span{font-size:1rem;}
 h1>a>span>em{font-size:0.5rem;}
 .font_01{font-style:italic;}/* italic normal */
 .font_02{font-weight:bold;}/* thin light normal bold bolder 100 ~ 400 ~ 900 */
-.font_03{font-family: "myriad pro", arial, nanumGothic, "돋움", dotum, sans-serif ;}
+.font_03{font-family: "myriad pro", arial, nanumGothic, "돋움", dotum, sans-serif;}
  /* 영문기준 원하는 포트 , 다른 대체폰트 , 한글폰트, 대체폰트 , 형식
  	* 띄어쓰기로 표현된 두개이상의 단어로되어있는 폰트명은 "" 를 표기해서 감싼다. */
 .font_04{font-size:2em; line-height:1.2; height: 30px; background-color: #ccc; margin-bottom: 150px;}
 .font_05{color:#074;  
-	font:normal bold 1em/1.7 "myriad pro", sans-serif;
-	}
+	font:normal bold 1em/1.7 "myriad pro", sans-serif;}
 	/* 
 	font: font-style font-weight font-size / line-height font-family ;
 	*/
