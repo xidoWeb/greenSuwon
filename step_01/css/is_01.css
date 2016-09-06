@@ -11,6 +11,30 @@ a{text-decoration: none; color:#333;}
 
 /* design */
 ul{width: 100%; height: auto;}
-ul>li{width:70px; height:70px; border:1px solid #777; margin:0.5em; float: left;
-	background-image: url("../img/background/multi_icon.png");
-	background-position:-47px -44px;}
+ul>li{width:70px; height:70px; border:1px solid #777; 
+	margin:0.5em; float: left;}
+.link>li>a{
+	background-image: url("../img/background/multi_icon.png");  transition:0.2s;
+	/*background-position:-47px -44px;*/}
+.li_01 > a{background-position: -47px -44px;}
+.li_01 > a:hover{background-position:-548px -42px;}
+.li_02 > a{background-position:-314px -44px;}
+.li_02 > a:hover{background-position:-814px -42px;}
+.li_03 > a{background-position:-408px -146px;}
+.li_03 > a:hover{background-position:-908px -144px;}
+.li_04 > a{background-position:-226px -244px;}
+.li_04 > a:hover{background-position:-726px -242px;}
+.li_05 > a{background-position: -318px -244px;}
+.li_05 > a:hover{background-position: -818px -242px;}
+.li_06 > a{background-position:-137px -344px;}
+.li_06 > a:hover{background-position:-637px -342px;}
+.li_07 > a{background-position: -407px -444px;}
+.li_07 > a:hover{background-position: -907px -440px;}
+.li_08 > a{background-position: -136px -546px;}
+.li_08 > a:hover{background-position: -636px -544px;}
+.li_09 > a{background-position: -137px -644px;}
+.li_09 > a:hover{background-position: -637px -642px;}
+.li_10 > a{background-position:-47px -744px;}
+.li_10 > a:hover{background-position:-547px -742px;}
+.li_11 > a{background-position:-407px -744px;}
+.li_11 > a:hover{background-position:-907px -742px;}
