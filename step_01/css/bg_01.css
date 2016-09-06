@@ -1,0 +1,39 @@
+/* bg_01.css */
+
+/* reset css */
+html, body{  height:100%;  color:#333;}
+html,body,h1,h2,h3,h4,h5,h6,p,pre,div,img,ul,ol,li{
+	margin: 0; padding: 0; border: 0;}
+
+a{text-decoration: none; color:#777;}
+a:hover{text-decoration:underline;}
+
+ul,ol,li{list-style: none;}
+
+table,tr,td,th,thead,tbody,tfoot{
+	border:1px solid #777; border-spacing:0; border-collapse:collapse;}
+
+a:focus{
+	outline:3px solid #fa0; outline-offset:2px; position:relative; z-index:1000;}
+
+.clearfix, .clearfix:after, .clearfix:before{
+	content:" "; display: block; clear: both;}
+
+/* -------------------------------------------------------------------- */
+
+/* design */
+.container{width:960px; height:100%; background-color:#ccc; margin:0 auto;}
+	#header{width: 100%; height: 100%; background-color: #fac;
+		background-image: url("../img/background/icon_02.png");
+		background-repeat:no-repeat;
+		background-position:-100px 30px;
+		}
+	#content{width: 100%; height: 100%; background-color: #aff;}
+		#section{width: 100%; height: 50%; border-bottom:5px solid #fa0;
+			background-image: url("../img/background/bg_04.jpg");
+			background-repeat:no-repeat; background-position:center 0;}
+		#article{width: 100%; height: 50%;
+			background-image: url("../img/background/bg_01.jpg");
+			background-repeat:no-repeat; background-position:center 0;
+			background-attachment:fixed;}
+	#footer{width: 100%; height: 50%; background-color: #aaa;}
