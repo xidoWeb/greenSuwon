@@ -1,0 +1,16 @@
+/* is_01.css */
+
+/*reset*/
+body{margin: 0;}
+ul,li,ol{margin: 0; padding: 0; list-style-type: none;}
+a{text-decoration: none; color:#333;}
+
+.link a{width: 100%; height: 100%; display: block; background-repeat:no-repeat;}
+.link a>span{width: 0; height: 0; display: block; overflow: hidden;}
+.clearfix:after{content: " "; display: block; clear: both;}
+
+/* design */
+ul{width: 100%; height: auto;}
+ul>li{width:70px; height:70px; border:1px solid #777; margin:0.5em; float: left;
+	background-image: url("../img/background/multi_icon.png");
+	background-position:-47px -44px;}
