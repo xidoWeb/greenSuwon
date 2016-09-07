@@ -19,11 +19,41 @@
 	#header{width: 164px; height:658px; background-color: #777; float:left;
 		padding-top:50px; padding-left:38px; padding-right:48px;}
 		h1{width: 100%; height: 114px; margin-bottom:32px;}
-		h1>a{background-image: url("../img/header/header.png");	background-position: 4px 6px;}
-		h1>a:hover, h1>a:focus{background-image: url("../img/header/header_on.png");}
+		h1>a, .gnb a{background-image: url("../img/header/header.png");	background-position: 4px 6px;}
+		h1>a:hover, h1>a:focus,
+		.gnb a:hover, .gnb a:focus{background-image: url("../img/header/header_on.png");}
+
+		.gnb{width: 100%; height: auto;}
+		.gnb>ul{width: 100%; height: auto;}
+		.gnb>ul>li{width: 100%; height: 42px; margin-bottom:20px;}
+		.gnb>ul>.gnb_06{height: 110px;}
+		.gnb>ul>.gnb_01>a{background-position:6px -140px;}
+		.gnb>ul>.gnb_02>a{background-position:6px -202px;}
+		.gnb>ul>.gnb_03>a{background-position:6px -266px;}
+		.gnb>ul>.gnb_04>a{background-position:6px -330px;}
+		.gnb>ul>.gnb_05>a{background-position:6px -392px;}
+		.gnb>ul>.gnb_06>a{background-position:6px bottom;}
 
 /* #content */
-	#content{width: 730px; height: 708; background-color: #adadad; float:left;}
+	#content{width: 730px; height: 708px; background-color: #adadad; float:left;
+		background-image: url("../img/content/content_text.png");
+		background-repeat: no-repeat; background-position:90% center;}
+	.pattern{width: 100%; height: 50px; background-image: url("../img/content/pattern.png");}
+	.com{width: 330px; height: 520px; margin-top:76px; margin-left: 125px; float: left;}
+	.com a{background-image: url("../img/content/com.png"); transition:all 2s ease-in-out;}
+	.com a:hover, .com a:focus{background-image: url("../img/content/com_on.png"); 
+	margin-left: 250px; outline: 0; }
 
 /* #footer */
-	#footer{width: 100%; height: 111px; border-top:1px solid #999; background-color: #fd0; clear:both;}
+	#footer{width:900px; height:96px; border-top:1px solid #999; background-color:#fd0; float: left;
+		padding-top:14px; padding-left:40px; padding-right: 40px;}
+	#footer>h2{width: 208px; height: 70px; background-color: #ccc; float:left; margin-right:16px;}
+	address{font-size:0.75em; float:left;}
+	address>p{}
+
+	.family{width: 300px; height: 150px; background-color: #fff; margin-top:-80px; float:right;}
+	.family>h3{}
+	.family>dl{width: 100%; height: 130px; background-color: #aac;}
+	.family>dl>dt{width:96px; height:65px; float: left; background-color: #faa;}
+	.family>dl>dd{width:204px; height:65px; float: left; background-color: #0af;}
+	.family>p{font-size: 0.75em; text-align: right; margin-top:3px;}
