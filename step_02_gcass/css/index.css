@@ -45,15 +45,23 @@
 	margin-left: 250px; outline: 0; }
 
 /* #footer */
-	#footer{width:900px; height:96px; border-top:1px solid #999; background-color:#fd0; float: left;
-		padding-top:14px; padding-left:40px; padding-right: 40px;}
+	#footer{width:900px; height:96px;background-color:#fd0; float: left;
+		padding-top:14px; padding-left:40px; padding-right: 40px;
+		position:relative;}
+	#footer:before{content:""; display: block; border-top:1px solid #f03; width: 100%;
+		position: absolute; top:-1px; left: 0; z-index:500;}
+
 	#footer>h2{width: 208px; height: 70px; background-color: #ccc; float:left; margin-right:16px;}
 	address{font-size:0.75em; float:left;}
 	address>p{}
 
-	.family{width: 300px; height: 150px; background-color: #fff; margin-top:-80px; float:right;}
+	.family{width:300px; height:150px; background-color: #fff; margin-top:-80px; float:right;}
 	.family>h3{}
-	.family>dl{width: 100%; height: 130px; background-color: #aac;}
-	.family>dl>dt{width:96px; height:65px; float: left; background-color: #faa;}
-	.family>dl>dd{width:204px; height:65px; float: left; background-color: #0af;}
+	.family>dl{width: 100%; height: 130px; background-color: #aac; text-indent:10px;}
+	.family dt, .family dd{height: 65px; float: left; line-height:65px;}
+	.family>dl>dt{width:96px; height:65px; float: left; background-color: #555; color:#fff;}
+	.family>dl>dd{width:204px; height:65px; float: left; background-color: #fff30d;}
+		.family a{color:#f00;}
+	.family>dl>dd.deep_yellow{background-color: #baa50c; color:#fff;}
+		.family .deep_yellow a{color:#fff;}
 	.family>p{font-size: 0.75em; text-align: right; margin-top:3px;}
