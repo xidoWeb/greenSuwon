@@ -1,0 +1,25 @@
+ /* index.css */
+
+.container{width: 980px; height: 850px; background-color: #ccc; margin: 0 auto;}
+/* #aside */
+	#aside{width: 100%; height: 30px; background-color: #888; }
+	#aside>ul{width: 435px; height: inherit; float: right; background-color: #fff;}
+	#aside>ul>li{float: left; height: inherit;}
+	.aside_01, .aside_02{width:95px;}
+	.aside_03{width:245px;}
+	#aside>ul>li>a{background-position:center center;}
+	.aside_01>a{background-image:url("../img/aside/home.png");}
+	.aside_02>a{background-image:url("../img/aside/study.png");}
+	.aside_03>a{background-image:url("../img/aside/education.png");}
+	.aside_01>a:hover, .aside_01>a:focus{background-image:url("../img/aside/home_on.png");}
+	.aside_02>a:hover, .aside_02>a:focus{background-image:url("../img/aside/study_on.png");}
+	.aside_03>a:hover, .aside_03>a:focus{background-image:url("../img/aside/education_on.png");}
+
+/* #header */
+	#header{width: 250px; height: 708px; background-color: #777; float:left;}
+	
+/* #content */
+	#content{width: 730px; height: 708px; background-color: #adadad; float:left;}
+	
+/* #footer */
+	#footer{width: 100%; height: 111px; border-top:1px solid #999; background-color: #fd0; clear:both;}
