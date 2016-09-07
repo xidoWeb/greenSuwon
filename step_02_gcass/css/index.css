@@ -16,10 +16,14 @@
 	.aside_03>a:hover, .aside_03>a:focus{background-image:url("../img/aside/education_on.png");}
 
 /* #header */
-	#header{width: 250px; height: 708px; background-color: #777; float:left;}
-	
+	#header{width: 164px; height:658px; background-color: #777; float:left;
+		padding-top:50px; padding-left:38px; padding-right:48px;}
+		h1{width: 100%; height: 114px; margin-bottom:32px;}
+		h1>a{background-image: url("../img/header/header.png");	background-position: 4px 6px;}
+		h1>a:hover, h1>a:focus{background-image: url("../img/header/header_on.png");}
+
 /* #content */
-	#content{width: 730px; height: 708px; background-color: #adadad; float:left;}
-	
+	#content{width: 730px; height: 708; background-color: #adadad; float:left;}
+
 /* #footer */
 	#footer{width: 100%; height: 111px; border-top:1px solid #999; background-color: #fd0; clear:both;}
