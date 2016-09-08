@@ -18,7 +18,21 @@ h1{width: 300px; height: 50px;padding-top: 20px; margin: 0 auto; border-bottom: 
 /* #section --------------------------------------------------------- */
 #section{width:100%; height: 450px; background-color: #0af;}
 .add_banner{width: 100%; height: 100%; background-color: #fac;
-	overflow: hidden;}
+	overflow: hidden; position: relative;}
+	/* 배너 버튼 */
+	.add_banner>div{width: 100px; height: 300px; 
+		position: absolute; z-index:100; 
+		top:50%; margin-top:-150px;}
+	.add_banner button{width: inherit; height:inherit; font-size:5em;
+		background-color:transparent; border-radius:3em;}
+	.add_banner button:hover,
+	.add_banner button:focus
+	{background-color:rgba(255,255,255,0.3); outline: 0;}
+
+	.add_banner>.left_btn{left:0;}
+	.add_banner>.right_btn{right:0;}
+
+	/* 슬라이드 배너 */
 .add_banner>ul{width: 300%; height: inherit; margin-left:-100%;}
 .add_banner>ul>li{width:33.333333%; height: 100%; 
 	background-color: #acc; font-weight: bold; float: left;	
