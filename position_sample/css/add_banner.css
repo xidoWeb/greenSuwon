@@ -1,0 +1,30 @@
+/* add_banner.css */
+
+body>div{margin: 0 auto;}
+/* #header --------------------------------------------------------- */
+#header{width: 960px; height: 150px; background-color: #dfdfdf;}
+h1{width: 300px; height: 50px;padding-top: 20px; margin: 0 auto; border-bottom: 2px solid  #fff;
+	color:#333; text-transform:uppercase; font-weight:bolder; text-align: center;
+	font-size: 2em; line-height: 2;}
+#gnb{width: 100%; height: 30px; line-height: 30px; text-align: center;}
+#gnb>h2{width: 0;height: 0; overflow: hidden;}
+#gnb>ul{width:inherit; height:inherit; margin-top: 2em;}
+#gnb>ul>li{width: 25%; height:inherit; float: left;}
+#gnb>ul>li>a{color:#95a;}
+#gnb>ul>li>a:hover, #gnb>ul>li>a:focus{border-bottom:2px solid #95a; 
+	outline: 0; color:#f07; font-size:1.5em;}
+
+
+/* #section --------------------------------------------------------- */
+#section{width:100%; height: 450px; background-color: #0af;}
+.add_banner{width: 100%; height: 100%; background-color: #fac;
+	overflow: hidden;}
+.add_banner>ul{width: 300%; height: inherit; margin-left:-100%;}
+.add_banner>ul>li{width:33.333333%; height: 100%; 
+	background-color: #acc; font-weight: bold; float: left;	
+	line-height:450px; font-size:3rem; 
+	color:#fff; text-align: center; text-shadow:-2px -2px 2px #333;}
+/* #content --------------------------------------------------------- */
+#content{width: 960px; height: 700px; background-color: #ccc;}
+/* #footer --------------------------------------------------------- */
+#footer{width: 960px; height: 100px; background-color:#999;}
