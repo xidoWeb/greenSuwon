@@ -1,5 +1,26 @@
 /* popup.css */
+/* popupWindow */
+/*  #popupWindow{width: 80%; height: 50%; background-color: #f06;
+ position: fixed; z-index:800; left:10%; top:25%;}  */
 
+ #popupWindow{width:420px; height:220px; padding:40px; background-color: #f06;
+ position: fixed; z-index:800; color:#fff; font-size: 1.3rem;
+ left:50%; margin-left:-250px; top:50%; margin-top:-150px;}
+
+[for="closePopup"]{width:50px; height:50px; position: relative; float: right;
+		cursor: pointer; background-color: #ccc;}
+[for="closePopup"]:before, [for="closePopup"]:after{content:" ";
+		display: block; width:50px; border:1px solid #fff; position: absolute;
+		top:25px;} 
+[for="closePopup"]:before{transform:rotate(45deg);}
+[for="closePopup"]:after{transform:rotate(-45deg);}
+ #popupWindow input{width: 0; height: 0;}
+ #popupWindow input:focus{outline: 0;}
+ #popupWindow input:focus + label{outline:2px solid #fa0;}
+ #popupWindow input:checked ~ h3{color:#fff;}
+ #popupWindow input:checked ~ p{color:#fff;}
+
+/* design */
 .container{width: 100%; height: 100%;}
 /* --------------------- #header ----------------------------------*/
 	#header{width: 26%; height: 80%; padding:5% 2%; float: left; background-color: #ccc;}
@@ -10,12 +31,18 @@
 	#gnb>ul{width: 100%; height: auto;}
 	#gnb>ul>li{width: 100%; height:2.5rem; border-bottom:1px solid #f07;
 		 text-align: center; line-height: 2.5rem;}
-	#gnb ol{width: 100%; height: auto; line-height:2rem; 
+
+			#gnb .gnb_03:hover > ol{display: block;}
+			#gnb .gnb_03>a:focus + ol{display: block;}
+
+	#gnb ol{width: 100%; height: auto; margin-top: -2.5rem; line-height:2rem; 
 		border-left:5px solid rgba(230,230,230,0.7);	margin-left:100%;
-		position: relative; z-index:100;}
+		position: relative; z-index:100; display: none;}
+	
+		
 	#gnb ol>li{width: 100%; height: 2rem; line-height: 2rem; 
 		margin-bottom: 0.3rem; text-indent:0.5rem;
-		background-color: #fa7;}
+		background-color: #433;}
 	#gnb li>a{color:#fff; text-shadow: -1px -1px -1px #171717;}
 
 /* --------------------- #content ----------------------------------*/
