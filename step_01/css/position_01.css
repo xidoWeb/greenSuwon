@@ -1,0 +1,25 @@
+/* position_01.css */
+body{word-wrap: 0;}
+h1 {width: 100%; height: 2rem; border-bottom:1px solid #0af; margin-bottom:1rem;
+	text-align: center; line-height: 1; padding-bottom: 0.5em;}
+.wrap {width: 80%; height: 7rem; background-color: #ccf; margin-left: 10%;}
+ .position {width:inherit; height: 6rem; margin-top: 0.5rem; margin-left:inherit; 
+ 	border: 1px solid #fa0; float: left; /* margin:0; padding: 0;  */background-color: #dfdfdf;}
+ 	.position>li{width: 5rem; height: 5rem; 
+ 		border:3px solid #5aa; float: left; text-align: center; 
+ 		line-height:5rem; color:#fff; font-weight: bold;
+ 		list-style: none;margin:1px;}
+	 .static {background-color:#cc7;}
+	 .fixed {background-color:#7cc;}
+	 .absolute {background-color:#77c;}
+	 .relative {background-color:#c7c;}
+	 .normal {background-color:#7c7;}
+/* ------------------------------------------------------------------------------ */
+body{height: 5000px;}
+.position{position: relative;}
+	 /* static은 z-index | top/left등은 작동하지 않음 :  가장 기본형의 형태 */
+	.static{position:static; z-index:-1000; top:500px; display: none;}
+	.fixed{position:fixed; z-index:500; top:0; left:5rem;}
+	.absolute{position: absolute; z-index:200; top:0.5rem; left:10rem;}
+	.relative{position: relative; z-index:1000; }
+	.normal{}
