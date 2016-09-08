@@ -42,3 +42,13 @@ h1{width: 300px; height: 50px;padding-top: 20px; margin: 0 auto; border-bottom: 
 #content{width: 960px; height: 700px; background-color: #ccc;}
 /* #footer --------------------------------------------------------- */
 #footer{width: 960px; height: 100px; background-color:#999;}
+
+
+/* 배너 이동 테스트 */
+.add_banner ul{transition:1s;}
+.left_btn:hover ~ ul{margin-left: 0;}
+.right_btn:hover ~ ul{margin-left: -200%;}
+
+body .add_banner .red{background-color:#f07;}
+body .add_banner .brown{background-color:#c73;}
+body .add_banner .blue{background-color:#03c;}
