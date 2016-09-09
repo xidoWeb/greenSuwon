@@ -1,0 +1,45 @@
+/* side_banner.css */
+body{overflow-x:hidden;}
+/* ---- #unb ---------------------------------     */
+#unb{width: 960px; height: 1.5rem; background-color: #ccc; margin: 0 auto;
+	border-bottom:1px solid #555; position: relative;}
+#unb:before{content:" "; display: block; width: 100vw; height:inherit;
+	background-color:inherit;
+	position: absolute; top: 0; left:50%; margin-left:-50vw; z-index:-100;}
+/* 단위: 
+	vw(view width) 는 브라우저 화면의 가로형태의 크기값을 기준으로 %단위의 형태 
+	vh(view height) 는 브라우저의 화면의 세로형태의 크기값을 기준으로 %단위의 형태
+	하위브라우저에서는 사용할 수 없다!!!
+*/
+
+/* ---- #header ---------------------------------  */
+#header{width: 960px; height: 7rem; background-color: #0af; margin: 0 auto;
+	padding-top: 2rem; padding-bottom: 2rem;}
+	h1{width: 100px; height: 40px; float: left; background-color: #fff; padding:20px; margin-left: 10px;}
+	#gnb{width: 700px; height: auto; float: right; margin-right: 10px;}
+	#gnb>dl{width: 24%; height: auto; margin-left:1%; float: left;}
+	#gnb dt{width: 100%; height: 1.2rem; margin-bottom: 10px; 
+		border-bottom:1px solid #fff; color:#fff;}
+	#gnb dd{width: 100%; height: 0; overflow: hidden; transition:0.5s;  margin-bottom:5px;}
+	#gnb dd>a{color:#fa0;}
+	#gnb dd>a:hover, #gnb>dd>a:focus{color:#fff; font-weight: bold;}
+	#gnb:hover dd, #gnb:focus dd{height:1.2rem;}
+/* ---- #sidebanner --------------------------------- */
+#sideBanner{width: 150px; height: 400px; padding: 25px;
+	 background-color: #f03;  
+	 position: fixed; z-index:800; top: 40px; left:50%; margin-left:500px;}
+
+#sideBanner>h2{width: 100%; height: 2rem; 
+	background-color:rgba(255,255,255,0.7); text-align: center;
+	line-height: 2rem; border-bottom:1px solid #fff;}	 
+
+
+/* ---- #section --------------------------------- */
+#section{width: 100%; height: 25rem; background-color: #aaa;}
+
+/* ---- #content --------------------------------- */
+#content{width: 960px; min-height: 40rem; height:auto; 
+	background-color: #888; margin: 0 auto;}
+
+/* ---- #footer ---------------------------------  */
+#footer{width: 100%; height: 5rem; background-color: #555;}
