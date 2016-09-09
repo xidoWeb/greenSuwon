@@ -2,7 +2,9 @@
 body{overflow-x:hidden;}
 /* ---- #unb ---------------------------------     */
 #unb{width: 960px; height: 1.5rem; background-color: #ccc; margin: 0 auto;
-	border-bottom:1px solid #555; position: relative;}
+	border-bottom:1px solid #555; 
+	position: fixed; top: 0; z-index: 800;
+	left: 50%; margin-left: -480px;}
 #unb:before{content:" "; display: block; width: 100vw; height:inherit;
 	background-color:inherit;
 	position: absolute; top: 0; left:50%; margin-left:-50vw; z-index:-100;}
