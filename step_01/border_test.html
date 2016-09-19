@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		
+		h1{width: 500px; height: 5rem; background-color: #acc; margin: 0 auto; text-align: center; line-height: 5rem;
+			position: relative;}
+		/*h1:hover{border-bottom:5px solid #333;}*/
+		h1:after{content:""; display: block; border-bottom:2px solid #f05;
+				position: absolute; bottom: 0; left:50%; width: 0; transition:all 1s;}
+
+		h1:hover:after{left: 0; width: 100%;}
+	/*	h1>span{width: 0; height: 5px; background-color: #144; display: block; transition:width 1s;}
+		h1:hover>span{width: 100%; }*/
+	</style>
+</head>
+<body>
+	<h1>test border
+	<!-- <span></span> -->
+	</h1>
+</body>
+</html>
