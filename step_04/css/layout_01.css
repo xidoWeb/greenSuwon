@@ -1,3 +1,4 @@
+
 /*! layout_01.css © xidostudios.com, 2016 */
  @charset "UTF-8";
  /*  ................................................................ */
@@ -33,16 +34,44 @@
 		  .banner_area_07{background-color: #717;}
 		  .banner_area_08{background-color: #818;}
 
-		.indicate{width: 200px; height: 30px; background-color: #fff;
+		.indicate{width: 200px; height: 30px;
 			position: absolute; bottom:20px; left:50%; margin-left:-100px; z-index:100;}
+			.indicate>li{width:16px; height:16px; float: left; 
+				margin-right:5px; border:2px solid #fff; border-radius:50%;}
+				.indicate >.active{background-color: #fff;}
+				.indi_01{}
+				.indi_02{}
+				.indi_03{}
+				.indi_04{}
+				.indi_05{}
+				.indi_06{}
+				.indi_07{}
+				.indi_08{margin-right:0;}
 	/* model ---------------------------------------------------------- */
-	#model{height: 400px; background-color: #f3f;}
-
+	#model{height: 370px; background-color: #fff; text-align: center;
+		padding-top:30px;}
+		#model>h2{width: 70%; height: 40px; font-size:3rem; margin:0 auto;}
+		#model>p{width: 70%; height: 30px; font-size:1rem; line-height: 30px;
+				margin:20px auto; color:#555;}
+		#model>.model_link{width:250px; height: 40px; border:1px solid #0af; margin:10px auto;
+			box-shadow:0 2px 4px #ccc;}
+		#model>.model_link>a{width: inherit; height: inherit; display: block; 
+			line-height:40px;	font-weight: bold; color:#fff; background-color: #0af;}
+		#model>.model_link>a:hover, 
+		#model>.model_link>a:focus{background-color: #fff; color:#333;}
 	/* gallery ---------------------------------------------------------- */
-	#gallery{height: 600px; background-color: #ff8;}
-
+	#gallery{height: 600px;}
+		.line_up{width: 100%; height:400px;}
+		.line_up>ul{width:inherit; height: inherit;}
+		.line_up>ul>li{width: 25%; height: 50%; float: left;}
+		.line_up>ul>.main{width: 50%; height: 100%;}
+			.line_up_01{background-color: #138;}
+	    .line_up_02{background-color: #248;}
+	    .line_up_03{background-color: #358;}
+	    .line_up_04{background-color: #468;}
+	    .line_up_05{background-color: #578;}
+		.near_gallery{width: 100%; height:200px; background-color: #ddd;}
 	/* footer ---------------------------------------------------------- */
 	#footer{height: 350px; background-color: #f8f;}
 		.footer_top{width: 100%; height: 50px; background-color: #999;}
     .footer_nav{width: 820px; height: 180px; padding:20px 70px; background-color: #777;}
-    .footer_address{width: 920px; height: 40px; padding: 20px; background-color: #0af;}
