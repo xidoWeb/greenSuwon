@@ -5,19 +5,25 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="apple-touch-icon" href="favicon.png">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+	<!-- css import -->
 	<link rel="stylesheet" href="./css/bin/reset.css" />
 	<link rel="stylesheet" href="./css/layout_01.css" />
+	<link rel="stylesheet" href="./css/src/_header.css" />
+	<link rel="stylesheet" href="./css/src/_addBanner.css" />
+	<link rel="stylesheet" href="./css/src/_model.css" />
+	<link rel="stylesheet" href="./css/src/_gallery.css" />
+	<link rel="stylesheet" href="./css/src/_footer.css" />
 	<title>layout</title>
 </head>
 <body>
 	<div class="container">
-		<div id="header">
+		<header id="conHeader">
 			<h1>logo</h1>
-			<div id="gnb">
+			<nav id="gnb">
 				<h2>gnb</h2>
-			</div>
-		</div><!-- #header -->
-		<div id="addBanner">
+			</nav>
+		</header><!-- #header -->
+		<section id="addBanner">
 			<h2 class="hidden">광고배너</h2>
 			<div class="slide_btn">
 				<button type="button" class="left_banner_button">&lt;</button>
@@ -43,13 +49,13 @@
 				<li class="indi_07">07</li>
 				<li class="indi_08">08</li>
 			</ul>
-		</div><!-- #adddBanner -->
-		<div id="model">
+		</section><!-- #adddBanner -->
+		<article id="model">
 			<h2>A Vehicle for Every Lifestyle</h2>
 			<p>당신의 라이프 스타일에 꼭 맞는 모델을 찾아보세요</p>
 			<div class="model_link"> <a href="#">전체 모델 보기</a> </div> 
-		</div><!-- #model -->
-		<div id="gallery">
+		</article><!-- #model -->
+		<article id="gallery">
 			<h2>제품 광고보기</h2>
 			<div class="line_up">
 				<h3 class="hidden">line_up시리즈</h3>
@@ -65,13 +71,13 @@
 				<h3 class="hidden">인근 매장 확인하기</h3>
 				near_gallery
 			</div>
-		</div><!-- #gallery -->
-		<div id="footer">
+		</article><!-- #gallery -->
+		<footer id="footer">
 			<h2 class="hidden">포드 정리</h2>
 			<div class="footer_top"></div><!-- .footer_top -->
 			<div class="footer_nav"></div><!-- .footer_nav -->
 			<div class="footer_address"></div><!-- .footer_address -->
-		</div><!-- #footer -->
+		</footer><!-- #footer -->
 	</div><!-- .container -->
 </body>
 </html>
