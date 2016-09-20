@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="./css/bin/reset.css" />
+	<script src="./js/jquery-1.12.4.min.js"></script>
+	<script src="./js/jquery-migrate-3.0.0.min.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
+	<title>jquery_01</title>
+	<style>
+		button{padding:1rem; background-color: #0af; color:#fff; font-weight: bold; margin:2rem;}
+	</style>
+	<script>
+	// javascript area
+		// var body = document.body;
+				// body.style.backgroundColor= 'red'; 
+
+		$(document).ready(function(){
+	// jQuery area
+		// step_01:배경색 바꾸기
+			// $('body').css({'backgroundColor': '#fac'});
+
+		// step_02: 버튼 클릭시 배경색 바꾸기
+		// 버튼클릭 -> body색상을 변경
+		$('button').on('click', function(){
+			$('body').animate({'backgroundColor': '#f70'}, 1000);
+		});
+
+
+		});
+	</script>
+</head>
+<body>
+	<button type="button">배경색</button>
+</body>
+</html>
