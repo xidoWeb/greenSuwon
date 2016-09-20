@@ -1,0 +1,36 @@
+/* addBanner.css ---------------------------------------------------------- */
+	#addBanner{height: 500px; overflow: hidden; position: relative;}
+		.slide_btn{width: 100px; height: 100px; 
+			position: absolute; right:0; top:50%; margin-top:-50px; z-index:100;}
+			.slide_btn>button{width: 100%; height: 50%; 
+				font-weight: bold; color:#fff; font-size:2rem;}
+			.slide_btn>button:hover, 
+			.slide_btn>button:focus{background-color: #ccc; color:#333;}
+			.left_banner_button{background-color: #075;}
+	    .right_banner_button{background-color: #570;}
+	    
+		.banner_box{width: 400%; height: 100%; margin-left: -100%; background-color: #777;}
+		.banner_box>li{width: 25%; height: 100%; float: left; 
+			text-align: center; line-height: 500px; font-size: 5rem; color:#fc0; font-weight: bold;}
+			.banner_area_01{background-color: #151;}
+		  .banner_area_02{background-color: #262;}
+		  .banner_area_03{background-color: #373;}
+		  .banner_area_04{background-color: #484;}
+		  .banner_area_05{background-color: #595;}
+		  .banner_area_06{background-color: #616;}
+		  .banner_area_07{background-color: #717;}
+		  .banner_area_08{background-color: #818;}
+
+		.indicate{width: 200px; height: 30px;
+			position: absolute; bottom:20px; left:50%; margin-left:-100px; z-index:100;}
+			.indicate>li{width:16px; height:16px; float: left; 
+				margin-right:5px; border:2px solid #fff; border-radius:50%;}
+				.indicate >.active{background-color: #fff;}
+				.indi_01{}
+				.indi_02{}
+				.indi_03{}
+				.indi_04{}
+				.indi_05{}
+				.indi_06{}
+				.indi_07{}
+				.indi_08{margin-right:0;}
