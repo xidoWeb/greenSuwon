@@ -1,0 +1,14 @@
+/*! multi_web.css © xidostudios.com, 2016 */
+ @charset "UTF-8";
+
+html, body{height: 100%; zoom:1;}
+
+body{position: relative;}
+#headBox{width:960px; height:48px; height:3rem; background-color:#f5c; position: absolute;
+	top: 16px; top: 1rem; left:50%; margin-left:-480px; z-index: 100; }
+#videoBox{width:100%; height:100%; background-color:#1cc; overflow: hidden;}
+	#videoPlayer{width: 100%; height:auto; 
+		background-image: url("../multi/images.jpg");
+		background-size:100%;}
+#conBox{width:100%; height:100%; background-color:#ac7;}
+#footBox{width:100%; height:160px; height:10rem; background-color:#a72;}

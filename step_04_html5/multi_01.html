@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- multi_01.html -->
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/bin/reset.css" />
+	<!-- <link href="http://vjs.zencdn.net/5.11.6/video-js.css" rel="stylesheet"> -->
+	<!-- If you'd like to support IE8 -->
+	<!-- <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+</head>
+<body>
+	<h1>multimedia 코드의 이해</h1>
+	<h2>video</h2>
+	<video id="my-video" class="video-js" poster="./multi/images.jpg" autoplay="autoplay"
+	loop="on" muted data-setup="{}">
+		<source src="./multi/piki.webM" type="video/webM">
+		<source src="./multi/piki.ogv" type="video/ogv">
+		<source src="./multi/piki.mp4" type="video/mp4">
+		<p>
+		사용하고계신 현재 브라우저에서는 비디오 재생이 되지 않습니다. <br />
+		크롬브라우저로 사용하세요.<br />
+		<a href="http://google.com/chrome">크롬브라우저 설치하러가기</a>
+		</p>
+	</video> 
+
+	<!-- <h2>audio</h2> -->
+	 <!-- <script src="http://vjs.zencdn.net/5.11.6/video.js"></script> -->
+</body>
+</html>

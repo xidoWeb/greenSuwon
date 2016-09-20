@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- multi_test_web.html -->
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/bin/reset.css" />
+	<link rel="stylesheet" href="./css/multi_web.css" />
+	<title>multimedia</title>
+</head>
+<body>
+	<header id="headBox">logo and navigation</header>
+	<section id="videoBox">
+		<h2 class="hidden">video</h2>
+		<video id="videoPlayer" autoplay="autoplay" loop="loop"	muted="muted">
+			<source src="./multi/web.webM" type="video/webM" />
+			<source src="./multi/web.ogv" type="video/ogv" />
+			<source src="./multi/web.mp4" type="video/mp4" />
+		<!-- 	<p>
+			재생이 지원되지 않는 브라우저 입니다.<br />
+			최신 브라우저로 업데이트 하세요.
+			</p> -->
+		</video>
+	</section>
+	<section id="conBox"></section>
+	<footer id="footBox"></footer>
+</body>
+</html>
