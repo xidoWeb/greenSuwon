@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>js_03</title>
+</head>
+<body>
+	<script>
+		var num, str;
+		num = 10; 
+		str = '10';
+		var eq = num + str;
+		console.log('eq:', eq);  // 1010(문자)
+		eq += 100;               // eq = eq + 100; 
+		console.log('eq:', eq);  // 1010100(문자)
+		parseInt(eq);
+		console.log('eq:', eq);  // 1010100 -> 숫자화
+		eq = eq - 100;
+		console.log('eq:', eq);  // 1010000(숫자)
+		eq = eq + 100;
+		console.log('eq:', eq);  // 1010100(숫자)
+
+	</script>
+</body>
+</html>
