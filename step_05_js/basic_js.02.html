@@ -14,16 +14,50 @@
 			// 'use strict';
 				// 변수
 				 var num;
-				 var str, num2, str2, num3;
+				 var str, num2, str2;
 				// var num, str, num2, str2;
+				num2 = null;
+				 
 
-				num3 = null;
+				// console.log(num);  // 변수 num
+				// console.log(num3); // 변수 num3(실제 존재하지 않는다!!)
+				// console.log('num3');  // 문자 num3
+				// console.log(num == num2);  // true
+				// console.log(num === num2); // false
 
-				console.log(num);  // 변수 num
-				console.log(num3); // 변수 num3(실제 존재하지 않는다!!)
-				console.log('num3');  // 문자 num3
-				console.log(num == num3);
-				console.log(num === num3);
+				console.log('where_var:', where_var);  // 에러를 표시할것같으나, 뒤에 선언했기때문에 undefined
+				// javascript는 다른 언와는 다르게 변수선언의 위치가 꼭 처음에 해야하는 것은 아니다!
+				// 호이스트 현상: 변수선언이 뒤에 나오더라도, 실제 변수명은 최상단(영역내에서)으로 끌어올려지는 현상
+				// 호이스트 현상시 변수 이름만 상단으로 끌어올려지며, 값 자체는 끌어올려지지 않는다!!
+
+				var where_var; 
+				where_var = null;
+
+				console.log('where_var:', where_var); // 결과 값자체가 먼저 도출되었기 때문에 값은 null
+
+				where_var = 10;
+				console.log('where_var:', where_var); // 10
+
+
+				where_var = '변수의 변화확인';
+				console.log('where_var:', where_var); // 변수의 변화확인
+
+
+			console.log('---------------------------------------------------------');
+
+			console.log('eunji- ', eunji);
+			var eunji; 
+			console.log('eunji- ', eunji);
+			eunji = '여자'; 
+			console.log('eunji- ', eunji);
+			eunji = '초등학생, 왈가닥'; 
+			console.log('eunji- ', eunji);
+			eunji = '남자친구를 만나다'; 
+			console.log('eunji- ', eunji);
+
+			console.log('---------------------------------------------------------');
+
+			
 		// ]]>
 	</script>
 </body>
