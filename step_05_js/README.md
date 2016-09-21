@@ -48,6 +48,9 @@
 		- 변수와 값을 같이 선언하는 방법(하나씩만 설정, 여러개를 한꺼번에 처리)
 	- **상수**: 변하지 않는 값(한번 지정하면 바꿀수 없다!!!)
 	- **호이스트**: 변수선언이 뒤에 나오더라도, 실제 변수명은 최상단(영역내에서)으로 끌어올려지는 현상, 변수가 선언되는 이름만 끌어올려진다.(값 자체는 올라가지 않는다!!!)
+	- 변수사용시 예약어, 키워드(변수이름으로 사용금지)
+		* 예약어 내용: break, case, catch, continue, default, delete, elsse, finally, for, function, if , in instanceof, new, return, switch, this, throw, try, typeof, var, void, while, with
+		* 주요 키워드: abstract, boolean, char, class, const, debugger, double, enum, export, extends, final, goto, importants, import, public, static, super, synchronized, throws, transient, volatile
 
 ## 연산자 
 	- 산술연산자: + - * / %
@@ -81,3 +84,31 @@
 		. a `||` b: a값과, b라는 값을 비교했을때 둘중 하나이상 참일 경우 true
 		. `!`a: a조건이 아닐때
 		. `!!`a: a조건이 아닌게 아닐때
+
+
+## javascript 용어
+- var: 변수 선언
+- 변수
+- 리터럴(literal): 변수에 저장되는 값(데이터)/ 값의 표현 방법(value)
+- 오퍼렌드: 연산자 이외의 것(변수, 리터럴)
+- 오퍼레이트: 연산자
+- argument, 인자값, 인수값, parameter, 매개변수: 함수(function)가 동작하기 위한 값
+- key, attribute, property: 속성
+- value: 속성의 값
+- 함수: 미리 정해놓은 처리기능
+- return: 반환 값
+- instance: 정의된 기능(형태)을 복제
+
+
+```css
+#box{color:#faa; margin:10px;}
+```
+```javascript
+var phone = {
+			"apple" : "iphone6" ,
+			"samsumg" : "note7" ,
+			"lg" : "v20" ,
+			"pentax" : "im100" 
+		}
+
+```
