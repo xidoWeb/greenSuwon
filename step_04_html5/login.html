@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/bin/reset.css">
+	<link rel="stylesheet" href="./css/login.css">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery-migrate-3.0.0.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<title>login</title>
+</head>
+<body>
+	<h1>log in</h1>
+	<div id="loginBox">
+		<div class="close_box">
+			<button type="button" id="closeBtn">닫기</button>
+		</div>
+		<form action="" method="post">
+			<fieldset>
+				<legend class="hidden">로그인 영역</legend>
+				<label for="user">로그인하실 아이디명을 입력하세요.</label>
+				<label for="pwd">해당 아이디의 비밀번호를 입력하세요.</label>
+				<label for="ok">로그인 버튼을 클릭하세요.</label>
+				<input 
+					type="text" 
+					id="user" 
+					name="user" 
+					value="" 
+					placeholder="ID" 
+					required="required">
+				<input 
+					type="password" 
+					id="pwd" 
+					name="pwd" 
+					value="" 
+					placeholder="password" 
+					required="required">
+				<input type="submit" id="ok" name="ok" value="log in" >
+			</fieldset>
+
+			<fieldset>
+				<legend class="hidden">id password 관련내용</legend>
+			</fieldset>
+		</form>
+	</div>
+
+	<script>
+		(function($) {
+			// #closeBtn{color:#fa6;}	
+			var loginBtn = $('#loginBox');
+
+			$('#closeBtn').on('click', function() {
+				loginBtn.slideUp();
+
+			$('h1').on('click',function() {
+				loginBtn.slideDown();
+			})
+			});
+		})(this.jQuery);
+	</script>
+</body>
+</html>

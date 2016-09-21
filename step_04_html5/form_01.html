@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 	<link rel="stylesheet" href="./css/bin/reset.css" /> -->
+	<style>
+		input[placeholder]{color:#0af;}
+	</style>
+	<title>form</title>
+</head>
+<body>
+	<h1>html5 form</h1>
+			<!-- 1. 입력 input type -->
+			<!-- 2. 선택 input type -->
+			<!-- 3. 버튼 input type -->
+			<!-- 4. 특수성 -->
+	<form action="http://naver.com" method="get">
+		<fieldset>
+			<legend>input_type_01</legend>
+			<!-- <label for="form_test_01">입력하세요.</label> -->
+			<!-- <input type="text" id="form_test_01" name="" value="" /> -->
+			<!-- 
+				text: 글씨입력
+				password: 비밀번호
+				radio: 하나만 선택(name값이 모두 같다)
+				checkbox: 멀티선택(name값이 모두 같다)
+				submit: 확인
+				reset: 취소
+				button: 버튼
+				file: 자료전송
+				image, src: 이미지버튼(submit)
+			-->
+
+			<!-- 
+				textarea: 여러줄 입력이 가능한 상자
+				select, option: 여러개의 선택, 그내용 확인
+				button
+			 -->
+			<label for="searchBar">검색하세요.</label>
+			<input 
+			type="search" 
+			name="search_bar" 
+			id="searchBar" 
+			value=""  
+			placeholder="검색하세요" /><br>
+
+			<label for="telNumber">전화번호를 입력하세요.</label>
+			<input 
+			type="tel" 
+			name="tel_number" 
+			id="telNumber" 
+			value="" 
+			 /><br>
+
+			<label for="webUrl">웹주소를 입력하세요</label>
+			<input 
+			type="url" 
+			name="web_url" 
+			id="webUrl" 
+			value="" 
+			 /><br>
+			
+			<label for="myMail">이메일을 입력하세요</label>
+			<input 
+			type="email" 
+			name="my_mail" 
+			id="myMail" 
+			value="" 
+			required="required" /><br>
+
+
+
+
+			<label for="number">num</label>
+			<input type="number" name="num" id="num" value="" 
+			min="0" max="100" step="5"><br>
+			<label for="ran">range</label>
+			<input type="range" name="ran" id="ran" value="" 
+			min="0" max="100" step="20"><br>
+			
+			<input type="submit" value="확인 및 전송">
+	<!-- 		<input type="color">
+			<input type="date">
+			<input type="time">
+			<input type="week">
+			<input type="month"> -->
+
+
+		</fieldset>
+	</form>
+</body>
+</html>
