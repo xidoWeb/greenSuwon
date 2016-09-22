@@ -1,0 +1,25 @@
+/*! login_test.css © xidostudios.com, 2016 */
+ @charset "UTF-8";
+ 
+ /*
+  * bg_green: #67be4b;
+  * btn_green: #00b242;
+  * light_gray: #f2f2f2;
+  * text_gray: #c2c2c2;
+	*/
+
+	body{background-color: #67be4b; padding-top:150px;}
+	h1{width: 0; height: 0; overflow: hidden;}
+	.log_box{width: 368px; height: 274px; padding:60px 62px; margin:0 auto; 
+		background-color: #fff; 
+		border-radius:5px; box-shadow: 3px 3px 15px #333}
+	.log_box>form{width: 100%; height: auto; margin-bottom:22px;}	
+	.log_box fieldset{width: inherit; height: inherit;}
+	.log_box legend,
+	.log_box label{width: 0; height: 0; overflow: hidden; display: block;}
+	.log_box input{width: 100%; height:64px; margin-bottom:20px;
+		background-color: #f2f2f2;}
+	.log_box input[type="submit"]{margin-bottom:0; background-color: #67be4b;}
+
+	.log_box>p{width: 100%; font-size:1rem; color:#c2c2c2; text-align: center;}	
+	.log_box>p>a{color:#67be4b;}
