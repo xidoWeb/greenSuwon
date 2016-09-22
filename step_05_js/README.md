@@ -99,16 +99,10 @@
 - return: 반환 값
 - instance: 정의된 기능(형태)을 복제
 
-
-```css
-#box{color:#faa; margin:10px;}
-```
-```javascript
-var phone = {
-			"apple" : "iphone6" ,
-			"samsumg" : "note7" ,
-			"lg" : "v20" ,
-			"pentax" : "im100" 
-		}
-
-```
+// .push() : 뒤 추가
+// .unshift() : 앞에 추가
+// .pop()  : 뒤에 빼기
+// .shift() : 앞에 빼기
+// 앞배열.concat(뒤배열) : 앞배열과, 뒤배열을 합치기
+// .indexOf('항목이름') : 원하는 항목이름의 위치(순서)를 찾아가는 방법
+// .join() : 배열화 되어있는 형태를 문자로 나열하는 기능

@@ -2,7 +2,8 @@
 // 문자.length;
 // 문자[n];
 // 문자.slice(앞글자, 이후 자를글자);
-
+// 문자.toUpperCase() : 대문자로 바꾸기
+// 문자.toLowerCase() : 소문자로 바꾸기
 
 console.log('abcedfg'.length);
 var school = '그린컴퓨터 아트학원 수원점';
@@ -20,8 +21,6 @@ console.log(result);
 // var school = '그린컴퓨터 아트학원 수원점';
 console.log(school.slice(2,5) + school.slice(11,-1));
 
-// .toUpperCase : 대문자로 바꾸기
-// .toLowerCase : 소문자로 바꾸기
 var green = 'green Computer ART school sUWon placE!';
 
 console.log( '대문자', green.toUpperCase() );
