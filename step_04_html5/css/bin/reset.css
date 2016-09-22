@@ -12,7 +12,7 @@ table, thead, tbody, tfoot, tr, td, th {
 	border-spacing:0; border-collapse:collapse; text-indent:5px;
 	border:1px solid #555; border-left:0; border-right:0;}
 thead{background-color: #ddd; border-bottom:2px solid #555;}
-button, input[type="button"]{cursor: pointer; border:0;}
+button, input[type="button"], input[type="submit"]{cursor: pointer; border:0;}
 a:focus, input:focus, button:focus, textarea:focus, select:focus{
 	outline:2px solid #fa0; outline-offset:3px; position:relative; z-index:1000;}
 

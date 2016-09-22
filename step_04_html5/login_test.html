@@ -10,15 +10,19 @@
 <body>
 	<h1>log-in</h1>
 	<div class="log_box">
-		<form action="" method="post">
+		<form action="http://naver.com" method="post">
 			<fieldset>
 				<legend>사이트 로그인</legend>
 				<label for="idName">로그인하실 아이디 이름을 작성하세요.</label>
-				<input type="text" name="idName" id="idName" value="" />
+				<input type="text" name="idName" id="idName" 
+				value="" placeholder="username" required="required" 
+				maxlength="20" />
 
 				<label for="pwName">해당 아이디의 비밀번호를 입력하세요.</label>
-				<input type="password" name="pwName" id="pwName" value="" />
-				
+				<input type="password" name="pwName" id="pwName" 
+				value="" placeholder="password" required="required" 
+				maxlength="20" />
+
 				<label for="okBtn">로그인하실려면 클릭하세요.</label>
 				<input type="submit" name="okBtn" id="okBtn" value="log in" />
 			</fieldset>
