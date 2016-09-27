@@ -1,0 +1,21 @@
+/* css3_04_boxsizing.css */
+h1{width: 100%; padding: 0.5rem; text-align: center; box-sizing:border-box;}
+div{width: 150px; height: 150px; background-color: #ccc; text-align: center;
+	line-height: 150px; margin:30px auto; color:#fff; font-weight: bold;}
+.content_01{padding:3rem; box-sizing:content-box;}
+.content_02{padding:2rem; border:1rem solid #fa0;}
+.padding_01{padding:3rem; box-sizing:border-box;}
+.border_01{padding:2rem; border:1rem solid #5f0; box-sizing:border-box;}
+.padding_box{padding:2rem;}/* 현재는 padding만 안으로 들어가는 기능은 없다 */
+
+/* 
+ box-shadow:x값이동  y값이동  번짐의정도  (늘어나는크기)  색상;
+ box-shadow:x값이동  y값이동  번짐의정도  (늘어나는크기)  색상   inset;
+ text-shadow:x값이동  y값이동  번짐의정도  (늘어나는크기)  색상;
+*/
+
+.content_01{box-shadow:10px 10px 5px #777;}
+.content_02{box-shadow:5px 5px 15px hsla(270,50%,50%,0.7) inset;}
+.padding_01{
+	text-shadow:2px 2px 2px rgba(50,50,50,0.5);
+}
