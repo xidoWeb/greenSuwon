@@ -1,0 +1,37 @@
+/* css3_05_background_01.css */
+
+/*
+background-color
+background-image
+background-repeat
+background-position
+background-attatchment: fixed | scroll;
+
+background-size: cover | contain | %;
+	cover: 주어진 크기에맞게 꽉차게 만드는것(일부 유실가능성 있음)
+	contain: 이미지 전체를 무조건 다 보이게(비율 유지)
+	%: 하나만 작성시 가로비율만 주어진 크기에 맞게 배치 
+	
+background-image:기능추가;
+image기능추가: 
+	1. 멀티 이미지배치가 가능해졌다( url(), url(), url(), url())
+			background-position:0 0, top right, bottom center, left 100%;
+			background-repeat:no-repeat, repeat, repeat-x, repeat;
+	2. gradient(linear, radial)
+
+background:url('.png'), repeat, 0 0;
+*/
+
+body{}
+h1{width: 100%; height: 3rem; text-align: center; margin-bottom: 2rem;
+	box-shadow:0 2px 3px #333; background-color: #fff;}
+div{width:700px; height:300px; border-bottom:1px solid #333;
+	background-color:#ddd; margin:0 auto;	box-sizing:border-box; 
+	padding:1rem; background-repeat: no-repeat;}
+.box_01{background-image: url(../../img/bg_01.png);
+	background-size:50%;}
+.box_02{background-image: url(../../img/bg_02.jpg);
+	background-size:contain;}
+.box_03{background-image: url(../../img/bg_03.png);}
+.box_04{background-image: url(../../img/bg_04.jpg);}
+.box_05{background-image: url(../../img/bg_01.png);}
