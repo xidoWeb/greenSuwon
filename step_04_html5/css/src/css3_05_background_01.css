@@ -11,7 +11,7 @@ background-size: cover | contain | %;
 	cover: 주어진 크기에맞게 꽉차게 만드는것(일부 유실가능성 있음)
 	contain: 이미지 전체를 무조건 다 보이게(비율 유지)
 	%: 하나만 작성시 가로비율만 주어진 크기에 맞게 배치 
-	
+
 background-image:기능추가;
 image기능추가: 
 	1. 멀티 이미지배치가 가능해졌다( url(), url(), url(), url())
@@ -22,7 +22,7 @@ image기능추가:
 background:url('.png'), repeat, 0 0;
 */
 
-body{}
+body{background-color: #8af;}
 h1{width: 100%; height: 3rem; text-align: center; margin-bottom: 2rem;
 	box-shadow:0 2px 3px #333; background-color: #fff;}
 div{width:700px; height:300px; border-bottom:1px solid #333;
@@ -32,6 +32,30 @@ div{width:700px; height:300px; border-bottom:1px solid #333;
 	background-size:50%;}
 .box_02{background-image: url(../../img/bg_02.jpg);
 	background-size:contain;}
-.box_03{background-image: url(../../img/bg_03.png);}
-.box_04{background-image: url(../../img/bg_04.jpg);}
-.box_05{background-image: url(../../img/bg_01.png);}
+.box_03{
+	background-image: url(../../img/bg_03.png), url(../../img/bg_01.png);
+	background-position:left bottom, right top;
+	-webkit-background-size:20%, 30%; 
+	-moz-background-size:20%, 30%; 
+	-ms-background-size:20%, 30%; 
+	-o-background-size:20%, 30%; 
+	background-size:20%, 30%; 
+}
+
+.box_04{opacity:1;
+	background-image:-webkit-linear-gradient(-30deg, #0af 50%,rgba(255,150,0,0.5) 50%);
+	background-image:-moz-linear-gradient(-30deg, #0af 50%,rgba(255,150,0,0.5) 50%);
+	background-image:-ms-linear-gradient(-30deg, #0af 50%,rgba(255,150,0,0.5) 50%);
+	background-image:-o-linear-gradient(-30deg, #0af 50%,rgba(255,150,0,0.5) 50%);
+	background-image:linear-gradient(-30deg, #0af 50%,rgba(255,150,0,0.5) 50%);
+}
+
+.box_05{
+	background-image:-webkit-radial-gradient(right center, #0af, #fa0, #f07);
+	background-image:-moz-radial-gradient(right center, #0af, #fa0, #f07);
+	background-image:-ms-radial-gradient(right center, #0af, #fa0, #f07);
+	background-image:-o-radial-gradient(right center, #0af, #fa0, #f07);
+	background-image:radial-gradient(right center, #0af, #fa0, #f07);
+	background-color: #fa0;
+}
+
