@@ -1,5 +1,5 @@
 /* css3_06_webfont.css */
-.container{min-width:960px; width: 100%;min-height: 10rem; height: auto; 
+#container{min-width:960px; width: 100%;min-height: 10rem; height: auto; 
 	margin: 0 auto; padding-top: 1rem; background-color: #ccc;}
 h1{width: 100%; height: 3rem; margin-bottom: 1rem; border-bottom: 1px solid  #0af;
 	text-align: center; line-height: 3rem; color:#fff; font-size: 2.7rem;}
