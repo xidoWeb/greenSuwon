@@ -1,0 +1,58 @@
+/* css3_07_transition.css */
+
+h1{width: 100%; height: 3rem; background-color: #ccc; 
+	box-shadow:0 2px 2px #333;	margin-bottom: 1rem;}
+ul{width: 80%; height: auto; padding: 1rem;
+	border:3px solid #777; border-radius:0.3rem;
+	margin-left: 10%; background-color: #dfdfdf;
+	box-sizing:border-box;}
+ul:hover > li{width: 100%;}
+li{width: 3rem; height: 2rem; margin-bottom:0.2rem;
+	overflow: hidden; border-bottom:1px solid #0af;
+	line-height: 2rem; font-size: 1.5rem;}
+li:nth-child(1){background-color: #f77;
+	transition-duration:2s;}
+li:nth-child(2){background-color: #77f;
+	transition-duration:1s;
+	transition-delay:1s;}
+li:nth-child(3){background-color: #f7f;
+	transition-duration:2s; 
+	transition-timing-function:ease-in;}
+li:nth-child(4){background-color: #7f7;
+	transition-property:background-color color;
+	transition-duration: 2s;}
+ul:hover > li:nth-child(4){background-color:#707; 
+													 color:#fff;}
+li:nth-child(5){background-color: #ff7;
+	-webkit-transition-duration:2s;
+	-moz-transition-duration:2s;
+	-ms-transition-duration:2s;
+	-o-transition-duration:2s;
+	transition-duration:2s;
+	
+	-webkit-transition-timing-function:cubic-bezier(0,1.7,1,-1.5);
+	-moz-transition-timing-function:cubic-bezier(0,1.7,1,-1.5);
+	-ms-transition-timing-function:cubic-bezier(0,1.7,1,-1.5);
+	-o-transition-timing-function:cubic-bezier(0,1.7,1,-1.5);
+	transition-timing-function:cubic-bezier(0,1.7,1,-1.5);}
+li:nth-child(6){background-color: #7ff;}
+li:nth-child(7){background-color: #fa7;}
+li:nth-child(8){background-color: #7fa;
+	-webkit-transition:all 2s ease-out 0.5s;
+	-moz-transition:all 2s ease-out 0.5s;
+	-ms-transition:all 2s ease-out 0.5s;
+	-o-transition:all 2s ease-out 0.5s;
+	transition:all 2s ease-out 0.5s;
+}
+
+/*
+ transition: 움직임을 처리하는 기능(한번의 기능!!)
+ transition-duration:일정시간;
+ transition-delay:지연시간;
+ transition-timing-function:움직임(속도감);
+ 	- ease, ease-in, ease-out, ease-in-out, cubic-bezier, linear
+ 	- 속도감 을 만들 수 있는 사이트 : cubic-bezier.com
+ transition-property:속성(width | height);
+ transition:property duration timing-function delay;
+ transition:property duration;
+*/

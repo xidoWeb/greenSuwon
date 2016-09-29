@@ -1,0 +1,28 @@
+/* css3_06_transform.css */ 
+
+.transform{width:800px; height:500px; border:2px solid #0af; margin:0 auto;	box-sizing:border-box; padding:1rem; background-color:#ddd; margin-bottom:2rem;}
+
+.transform>div{width:300px; height:300px; text-align: center; line-height:300px;	font-size:3rem; background-color: #faa; border:-0.3rem solid #777; float:left;	margin:1rem;
+	border-radius:1rem; transition:1s;}
+
+.transform>div:hover{background-color: #0ac; color:#fff;}
+/* transform: 형태 변형  - 회전, 뒤틀기, 위치이동, 크기  
+	x, y, z */
+.tr_01>div:nth-of-type(2):active{transform:rotate(1890deg);}
+.tr_02>div:nth-of-type(2):active{transform:skewY(45deg);}
+.tr_02>div:nth-of-type(2):active >
+											.none_skew{
+																display: block;
+																transform:skewY(-45deg);}
+.tr_03>div:nth-of-type(2):active{
+										transform:translate(100px,200px);}
+.tr_04>div:nth-of-type(2):active{
+										transform:scale(0.5);}
+.tr_04>div:nth-of-type(2):active >
+										.more_scale{
+												transition: 1s;
+												display: block;
+												transform:scale(4);}
+.tr_05{perspective:1000px;}
+.tr_05>div:nth-of-type(2):active{
+										transform:rotateY(-90deg) translate(500px) rotateY(90deg);}
