@@ -12,6 +12,9 @@
 @media screen and (min-width: 1024px) {}
 
 /* 주의사항:
-단위: px단위는 안함
+단위: px단위는 안함: em, rem, %;
+
 
 */
+
+h1{ width: 100rem;}

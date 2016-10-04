@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- aria_01.html -->
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+
+	<title>Document</title>
+</head>
+<body role="document">
+	<div id="container">
+		<header id="headerBox" role="banner">
+			<form action="">
+				<input type="search" name="" id="searchBar" value="">
+				<input type="button" name="" id="searchButton" value="검색">
+				<label for="searchBar">필요한 내용을 검색하세요.</label>
+				<label for="searchButton">검색버튼을 클릭하세요.</label>
+			</form>
+
+
+			<nav id="gnb" role="navigation">
+				<ul role="list">
+					<li role="listitem"><a href="#">link_1</a></li>
+					<li role="listitem"><a href="#">link_2</a></li>
+					<li role="listitem"><a href="#">link_3</a></li>
+				</ul>
+			</nav><!-- nav -->
+		</header><!-- header -->
+		<aside id="asideBox" role="complementary">
+			<form action="" methoe="post">
+				<fieldset>
+					<legend>로그인 창</legend>
+					<label for="user">
+						<span aria-hidden="true">ID</span>
+						<span class="hidden">로그인하실 사용자의 아이디를 입력하세요.</span>
+					</label>
+					<input type="text" id="user" name="user" value="" />
+
+					<label for="pwd" aria-hidden="true">PW</label>
+					<input type="password" id="pwd" 
+						name="pwd" value="" aria-describedby="pwdRead"/>
+					<span id="pwdRead">로그인하실 사용자의 비밀번호를 입력하세요.</span>
+
+					<input type="submit" id="" name="" value="log in">
+				</fieldset>
+			</form>
+
+		</aside>
+		<article id="articleBox" role="main"></article>
+		<footer id="footerBox" role="contentinfo">
+			<address>
+				메일: <a href="mailto:test@gmail.com">test@gmail.com</a>
+			</address>
+		</footer><!-- footer -->
+	</div>
+</body>
+</html>
