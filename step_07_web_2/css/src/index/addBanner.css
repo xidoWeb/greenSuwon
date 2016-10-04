@@ -1,3 +1,28 @@
 /* addBanner.css */
 @charset "utf-8";
-#addBanner{width: 100%; height: 430px;}
+#addBanner{width: 100%; height: 430px; position: relative;
+	overflow: hidden;}
+	.add_btn{width:60px; height:82px; 
+		position:absolute; z-index:200; top:50%; margin-top:-40px;
+		background-repeat: no-repeat; background-position:center;
+		transition:background 0.3s; cursor:pointer;}
+
+	.add_btn_l{left:10px; 
+		background-image: url("../../../img/main/banner/left_btn.png");}
+	.add_btn_l:hover{
+		background-image: url("../../../img/main/banner/left_btn_on.png");}
+	.add_btn_r{right: 10px;
+		background-image: url("../../../img/main/banner/right_btn.png");}
+	.add_btn_r:hover{
+		background-image: url("../../../img/main/banner/right_btn_on.png");}
+
+	.indecate{width: 68px; height: 10px; background-color: #777;
+		position: absolute; right:100px; bottom:36px; z-index: 200;}
+	.add_box{width:300%; height: 100%; margin-left:-100%;}
+	.add_box>li{width:calc(100% / 3); height: 100%; float: left;}
+
+	.add_box_1{background-color: #a1a;}
+	.add_box_2{background-color: #b2b;}
+	.add_box_3{background-color: #c3c;}
+	.add_box_4{background-color: #d4d;}
+	.add_box_5{background-color: #e5e;}f
