@@ -1,0 +1,8 @@
+/* index.css */
+@charset "utf-8";
+@import url("./src/source.css");
+@import url("./src/index/indexContainer.css");
+@import url("./src/all/headBox.css");
+@import url("./src/index/addBanner.css");
+@import url("./src/index/contentBox.css");
+@import url("./src/all/footBox.css");
