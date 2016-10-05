@@ -1,3 +1,10 @@
 /* footBox.css */
 @charset "utf-8";
-#footBox{width: 100%; height: 120px;}
+
+#footBox{width: 100%; height: 120px; padding:20px 70px 20px 30px; box-sizing:border-box;}
+#footBox>h2{width:80px; height:26px; float: left; margin-top: 22px; margin-right: 90px; 
+	background-image: url("../../../img/all/footer/h2_logo.png"); 
+	background-repeat:no-repeat; background-position:center 3px; }
+.xido_adr{width:430px; height:78px; float: left; background-color: #fff;}
+.family_mark{width:134px; height:100px; float: right; margin-top: -20px; 
+	background-color: #fff;}
