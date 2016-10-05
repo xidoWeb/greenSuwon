@@ -1,6 +1,7 @@
 
 $(function() {
 	var box = $('div');
+	var timed = 300;
 	// box
 	// .on('mouseenter', function(){
 	// 	$(this).animate({height: '+=15px'});
@@ -36,14 +37,20 @@ $(function() {
 	// 	}
 	// }
 	$('#red').on('click', function(){
-		$(this).next().show();
-	});
+		$(this).next().animate({width:'100px', padding:'1rem'});
+	});// show , fadeIn, slideDown
 
 	$('#yellow').on('click', function(){
-		$(this).hide();
-	});
+		$(this).animate({width:0, padding:0, overflow:'hidden'});
+	});// hide, fadeOut, slideUp
 
 	$('#green').on('click', function(){
-		$(this).prev().toggle();
-	});
+		var yellow = $(this).prev();
+		var yWidth = yellow.width();
+		if(yWidth === 0){
+			yellow.animate({width:'100px', padding:'1rem'});
+		} else{
+			yellow.animate({width:0, padding:0, overflow:'hidden'});
+		}
+	});// toggle, fadeToggle, slideToggle
 });
