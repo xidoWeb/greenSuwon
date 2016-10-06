@@ -15,10 +15,11 @@ $(function() {
 
 	// body 앞에 p삽입
 	$('body').prepend('<p>앞에 추가되었습니다.</p>'); 
-	
+
 	// body자식중 p의 마지막 요소에 내용변경
 	$('body>p:last').text('내용이 재변경되었습니다.'); 
 
+	$('body').attr({'class':'test'});
 	$('body').addClass('box');
 	$('.box').css({backgroundColor:'#aaf', color:'#fff', margin:0});
 
