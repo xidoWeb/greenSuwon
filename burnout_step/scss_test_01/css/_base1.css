@@ -1,0 +1,18 @@
+/* base1 */
+.container {
+  color: #fa0;
+}
+
+.header {
+  background-color: #fff;
+}
+
+.nav {
+  width: 100px;
+  height: 2rem;
+  background-color: #acc;
+}
+
+.box {
+  background-image: url("./img/a.png");
+}
