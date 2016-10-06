@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
 	<link rel="stylesheet" href="./css/bin/reset.css" /> 
+	<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="./css/index.css" />
 	<!--[if lte IE 9]>
 		<script src="./ie/html5shiv/dist/html5shiv.min.js"></script>
@@ -45,11 +46,18 @@
 					<fieldset>
 						<legend class="hidden">시도웹 검색</legend>
 						<label for="search_bar" class="hidden">필요한 내용을 검색하세요.</label>
-						<input type="search" name="searchBar" id="search_bar" value="">
-						<label for="search_btn" >
-							<i class="fa fa-search" aria-hidden="true"></i>
+						<input 
+							type="search" 
+							name="searchBar" 
+							id="search_bar" 
+							value=""
+							placeholder="검색">
+
+						<label for="search_btn" class="sColor2">
+							<i class="fa fa-search wfont" aria-hidden="true"></i>
 							<span class="hidden">검색</span>
 						</label>
+
 						<input type="button" name="searchBtn" id="search_btn" value="검색" class="hidden">
 					</fieldset>
 				</form>

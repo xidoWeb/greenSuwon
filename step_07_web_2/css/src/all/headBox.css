@@ -10,17 +10,25 @@
 		background-image: url("../../../img/all/header/logo.png");
 		background-repeat: no-repeat; background-position:center center;}
 
-	#lnb{width: 146px; height: 40px; float: right; margin:10px 40px;
-		background-color: #ddd;}
+	#lnb{width: 146px; height: 40px; float: right; margin:10px 40px;}
 		#lnb>ul{width: 100%; height: 16px; margin-bottom:4px;}
-		#lnb li{height: 100%;	display:inline-block; }
+
+		#lnb li{width:calc(100% / 3); height: 100%; float: left;
+			word-spacing:-0.23rem; font-style:italic; text-align: right;}
+
 		#lnb li>a{color:#fff; line-height:16px; font-size: 1rem;}
+		#lnb li>a:hover, 
+		#lnb li>a:focus{color:#333; border-bottom:1px solid #333;	font-weight: bold;
+			outline: none;}
+
 		#lnb>form{width: 100%; height: 20px;}
 		#lnb>form>fieldset{width:inherit; height:inherit;}
 		#lnb>form>legend{width:inherit; height:inherit;}
-		#lnb [type="search"]{width: 126px; height: 100%; float: left;}
-		#lnb [type="button"]{width: 20px; height: 100%; float: right;}
-
+		#lnb [type="search"]{width: 126px; height: 100%; float: left;
+			text-indent:5px;}
+		#lnb [for="search_btn"]{width: 20px; height: 100%; 
+					display: block; float: right; text-align: center; cursor: pointer;}
+		#lnb [for="search_btn"] i::before{color:inherit;}
 
 /* #gnb -------------------*/
 	#gnb{width: 800px; height: 30px;  
