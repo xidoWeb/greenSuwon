@@ -16,13 +16,18 @@
 	.add_btn_r:hover{
 		background-image: url("../../../img/main/banner/right_btn_on.png");}
 
-	.indecate{width: 68px; height: 10px; background-color: #777;
+	.indecate{width: 120px; height: 16px;
 		position: absolute; right:100px; bottom:36px; z-index: 200;}
-	.add_box{width:300%; height: 100%; margin-left:-100%;}
-	.add_box>li{width:calc(100% / 3); height: 100%; float: left;}
+	.indecate>li{width: 1rem; height: 1rem; display: inline-block;
+		background-color: #faa; border-radius:1rem; padding-top: 0;}
+	.indecate>li.active{width: 2rem; background-color: #f06;}
 
-	.add_box_1{background-color: #a1a;}
-	.add_box_2{background-color: #b2b;}
-	.add_box_3{background-color: #c3c;}
-	.add_box_4{background-color: #d4d;}
-	.add_box_5{background-color: #e5e;}f
+	.add_box{width:300%; height: 100%; margin-left:-100%;}
+	.add_box>li{width:calc(100% / 3); height: 100%; float: left;
+		background-repeat: no-repeat; background-position:bottom;}
+
+	.add_box_1{background-image: url("../../../img/main/banner/banner_01.png");}
+	.add_box_2{background-image: url("../../../img/main/banner/banner_02.png");}
+	.add_box_3{background-image: url("../../../img/main/banner/banner_03.png");}
+	.add_box_4{background-image: url("../../../img/main/banner/banner_04.png");}
+	.add_box_5{background-image: url("../../../img/main/banner/banner_05.png");}
