@@ -19,7 +19,7 @@
 	.indecate{width: 120px; height: 16px;
 		position: absolute; right:100px; bottom:36px; z-index: 200;}
 	.indecate>li{width: 1rem; height: 1rem; display: inline-block;
-		background-color: #faa; border-radius:1rem; padding-top: 0;}
+		background-color: #faa; border-radius:1rem; padding-top: 0; transition:0.5s;}
 	.indecate>li.active{width: 2rem; background-color: #f06;}
 
 	.add_box{width:300%; height: 100%; margin-left:-100%;}
