@@ -25,10 +25,13 @@
 		#lnb>form>fieldset{width:inherit; height:inherit;}
 		#lnb>form>legend{width:inherit; height:inherit;}
 		#lnb [type="search"]{width: 126px; height: 100%; float: left;
-			text-indent:5px;}
+			text-indent:5px; font-size: 0.8rem;}
 		#lnb [for="search_btn"]{width: 20px; height: 100%; 
 					display: block; float: right; text-align: center; cursor: pointer;}
 		#lnb [for="search_btn"] i::before{color:inherit;}
+		#search_btn:focus{outline: none;}
+		#search_btn:focus + label{outline:3px solid #fa0; background-color: #fff;}
+		#search_btn:focus + label>i{color:#5f5f5f;}
 
 /* #gnb -------------------*/
 	#gnb{width: 800px; height: 30px;  
