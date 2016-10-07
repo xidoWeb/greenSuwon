@@ -18,15 +18,36 @@
 	width: 0; height:14px; position: absolute; right: 0; top:2px;}
 .xido_adr>ul>li>a{color:#fff; line-height: 18px; font-size: 1rem;}
 
-.xido_adr>address{width: 100%;}
-.xido_adr>address>p{}
-.xido_adr>address>p>strong{}
-.xido_adr>address>p>strong::after{content:":";}
-.xido_adr .bar{}
+.xido_adr>address{width:100%; height:36px; margin-top: 4px;}
+.xido_adr>address>p{width: 100%; height: 100%; font-size: 1rem; color:#ddd;	font-weight: bold;}
+.xido_adr>address>p>strong{font-weight:normal;}
+.xido_adr>address>p>strong::after{content:" : ";}
+.xido_adr .v_bar{width:0; height:0.7rem; 
+	border-right:1px solid #ddd; display:inline-block;}
 
-.xido_adr>p{}
+.xido_adr>p{width: 100%; height: 20px;color:#ddd;}
 .xido_adr>p>small{}
 
 /* .family_mark ----------------------------------------- */
-.family_mark{width:134px; height:100px; float: right; margin-top: -20px; 
-	background-color: #fff;}
+.family_mark{width:134px; height:100px; float: right; margin-top: -20px; }
+	.family_mark>#family{width: 100%; height: 20px; margin-bottom: 4px;
+		background-color: #ddd; border: 0; color:#f06; font-style: italic;
+		font-weight: bold;}
+	.family_mark>#family>option{}
+
+	.family_mark>p{width: 100%; height:18px; margin-bottom:20px; color:#ddd;
+		font-size:0.7rem; text-align: right;}
+
+	.family_mark>dl{width: 100%; height: 40px;}
+	.family_mark>dl>dt{}
+	.family_mark>dl>dd{width: 40px; height: 100%; float: left; margin-right:7px;
+								background-image: url("../../../img/all/footer/link_mark_00.png");
+								background-repeat:no-repeat; transition: background-position 0.5s;}
+	.family_mark>dl>dd:nth-of-type(1){background-position:left top;}
+	.family_mark>dl>dd:nth-of-type(2){background-position:center top;}
+	.family_mark>dl>dd:nth-of-type(3){margin-right: 0;
+		                                background-position:right  top;}
+
+	.family_mark>dl>dd:nth-of-type(1):hover{background-position:left bottom;}
+	.family_mark>dl>dd:nth-of-type(2):hover{background-position:center bottom;}
+	.family_mark>dl>dd:nth-of-type(3):hover{background-position:right  bottom;}
