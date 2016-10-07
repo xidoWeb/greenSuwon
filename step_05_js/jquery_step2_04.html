@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/bin/reset.css">
+	<title>Document</title>
+	<style>	
+		#header{width: 100%; height:4rem; box-sizing:border-box; padding: 0.5rem;
+			background-color: #ccc; border-bottom: 1px solid  #333;
+			position: fixed; top: 0; left: 0; z-index: 500; box-shadow:0 1px 3px #333;}
+		h1{width:100%; height: 1rem; color:#fff; text-align: center;}	
+		ul{width: 100%; height::1.5rem; margin-top: 0.3rem;}
+		ul>li{width:15%; display:inline-block; margin-right:2rem; position: relative;}
+		ul>li:last-child{margin-right: 0;}
+		ul>li::after{content:" "; border-right:2px solid #fff; position: absolute;
+		right: -1%; top: 0.2rem; width: 0; height:0.7rem;}
+		ul>li:last-child::after{margin-right: 0; border: 0;}
+		
+/*		#article_01{margin-top:4rem;}*/
+		.content{width: 100%; height:100%; box-sizing:border-box;
+			padding: 3rem; padding-top:5rem; font-size:4rem; color:#0af; background-color: #ccf;
+			border-bottom:2px solid #f7a;}
+
+		#footer{width: 100%; height: 2rem; padding-top: 0.5rem; background-color: #ddd;}
+
+
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1>원페이지 이동</h1>
+		<ul>
+			<li><a href="#article_01">link_01</a></li>
+			<li><a href="#article_02">link_02</a></li>
+			<li><a href="#article_03">link_03</a></li>
+			<li><a href="#article_04">link_04</a></li>
+			<li><a href="#article_05">link_05</a></li>
+		</ul>
+	</div>
+	<div id="article_01" class="content">article_01</div>
+	<div id="article_02" class="content">article_02</div>
+	<div id="article_03" class="content">article_03</div>
+	<div id="article_04" class="content">article_04</div>
+	<div id="article_05" class="content">article_05</div>
+	<div id="footer"></div>
+<!-- jquery -->
+	<script src="./js/jquery-1.12.4.min.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
+	<script src="./js/src/jquery_07.js"></script>
+</body>
+</html>
