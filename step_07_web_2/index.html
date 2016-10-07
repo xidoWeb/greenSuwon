@@ -158,31 +158,32 @@
 				<h3 class="hidden">family site</h3>
 
 				<select name="" id="family">
-					<option>xido.group</option>
+					<option value="">xido.group</option>
 					<option value="http://www.naver.com">네이버</option>
 					<option value="http://www.daum.net">다음</option>
 					<option value="http://www.google.com">구글</option>
 				</select>
 
 				<script>
-					// (function($) {
-					// 	$('#family').on('change',function() {
-					// 		var option_link = $(this).children().attr('value');
-					// 		console.log(option_link);
-					// 	});
-					// })(this.jQuery);
+					(function($) {
+						$('#family').on('change', function() {
+							var url = $(this).val();
+							// console.log(url);
+							location = url;
+						});
+					})(this.jQuery);
 
-				var family = document.querySelector('#family'); 
-				family.onchange = function() {
-						var this_site = this.children[this.selectedIndex].getAttribute('value');
-  						window.location.href = this_site;
-						}
+			// var family = document.querySelector('#family'); 
+			// family.onchange = function() {
+			// 		var this_site = this.children[this.selectedIndex].getAttribute('value');
+			//		window.location.href = this_site;
+			// 		}
 				</script>
 
 				<p>designed by xido.</p>
 
 				<dl>
-					<dt class="hidden">xite hobby</dt>
+					<dt class="hidden">xido hobby</dt>
 					<dd><span class="hidden">hobby_1</span></dd>
 					<dd><span class="hidden">hobby_2</span></dd>
 					<dd><span class="hidden">hobby_3</span></dd>
@@ -190,6 +191,7 @@
 
 			</div>
 		</footer>
+
 	</div>
 </body>
 </html>
