@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/bin/reset.css">
+	<script src="./js/jquery-1.12.4.min.js"></script>
+	<!-- <script src="./js/jquery-migrate-3.0.0.min.js"></script> -->
+	<script src="./js/jquery-ui.min.js"></script>
+	<title>Document</title>
+	<style>
+		#wrap{min-width:60rem; width: 100%; height: auto; 
+			padding-top: 1rem; background-color: #ccc; overflow: hidden;}
+		header{width: 100%; height: 3rem; background-color: #f25;}
+
+		h1{width: 30%; height: 2rem; float: left; margin-top: 0.5rem;
+			background-color: #fff; box-sizing:border-box; padding:0.2rem;}
+
+		nav{min-width:31.25rem; width: 50%; height: 1.5rem; float: right;
+			margin-top: 1rem; background-color: #aff; line-height: 1.5rem;	
+			transition:margin-right 0.5s;}
+		nav.moving{margin-right:calc(-50% + 3.8rem);}
+
+		nav>h2{width: 3.5rem; height: 100%; float: left; 
+			border-right:.3rem solid #777; cursor: pointer;}
+
+		nav>ul{width:calc(100% - 3.8rem); height: 100%; float: left;}
+		nav>ul>li{float: left; margin-right: 0.3rem; height: 100%;
+			padding:0 0.3rem; border-right:1px solid #555;}
+		nav>ul>li:last-child{border: 0; padding-right:0;}
+		nav>ul>li:first-child{padding-left: 0;}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<h1>jquery_popup page</h1>
+			<nav>
+				<h2>menu</h2>
+				<ul>
+					<li>menu_1</li>
+					<li>menu_2</li>
+					<li>menu_3</li>
+					<li>menu_4</li>
+					<li>menu_5</li>
+				</ul>
+			</nav>
+		</header>
+		<article></article>
+	</div>
+	<script src="./js/src/step2_05.js"></script>
+</body>
+</html>
