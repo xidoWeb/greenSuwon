@@ -6,10 +6,10 @@
 		background-image: url("../img/side_bar/top_bg_01.png"); background-repeat: no-repeat;
 		position: absolute; top: 0; left: 0; }
 
-	.menu_box{width:calc(100% - 16px); min-height:82px; height:auto; 
+	.menu_box{width:calc(100% - 28px); min-height:82px; height:auto; 
 		background-image: url("../img/side_bar/top_bg_02.png");
 		background-repeat: repeat-y;  padding:15px 0; position: relative;
-		padding-left:16px;}
+		padding-left:16px; padding-right:12px;}
 
 	.menu_box::after{content:" "; display: block; width: 100%; height: 15px;
 		background-image: url("../img/side_bar/top_bg_03.png"); background-repeat:no-repeat;
@@ -21,15 +21,30 @@
 
 	.menu_box h3{width:132px; height: 46px; background-color: #aff; margin-bottom:10px;
 		margin-left:-21px; box-sizing:border-box; padding: 5px 26px; position: relative;
-		background-color: #5f5f5f;}
+		background-color: #5f5f5f;
+		background-image: url("../img/side_bar/program_name.png");
+		background-repeat: no-repeat; background-position: center;}
+
 	.menu_box h3::before,
-	.menu_box h3::after{content:" "; display: block; width: 100%; height: 5px; 
-		background-image: url("../img/side_bar/tie_line.png");
-		background-repeat:repeat-x;
-		left: 0; position: absolute;
-		}
-	.menu_box h3::before{top: 0;}
-	.menu_box h3::after{bottom:0;}
+	.menu_box h3::after{content:" "; display: block; width: 100%; height:0; 
+		border-top:1px solid #fff; background-repeat:repeat-x; left:0; position: absolute;}
+	.menu_box h3::before{top: 2px;}
+	.menu_box h3::after{bottom:2px;}
+/* .subject */
+	.subject{width: 100%; height:auto;}
+	.subject>li{width: 100%; height: 12px; margin-bottom: 6px;
+							background-image: url("../img/side_bar/fixed_program_icon.png");
+							background-repeat: no-repeat;}
+	.subject>li>a{width:78px; height: 100%; display: block; float: right;
+								background-image: url("../img/side_bar/fixed_bar_list.png");
+								background-position: inherit;}
+	.subject>li:hover>a{background-image: url("../img/side_bar/fixed_bar_list_on.png");}
+
+	.subject>li:nth-child(1){background-position: 0 0;}
+	.subject>li:nth-child(2){background-position: 0 -17px;}
+	.subject>li:nth-child(3){background-position: 0 -35px;}
+	.subject>li:nth-child(4){background-position: 0 -160px;}
+	/*.subject>li:nth-child(5){background-position: 0 0;}*/
 
 /* ------------------------------------------  */
 	.etc_box{width: 100%; height: 75px; margin-top: 5px;
