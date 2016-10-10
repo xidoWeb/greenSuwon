@@ -23,4 +23,11 @@ $(function() {
 
 		// addClass, removeClass, toggleClass, hasClass
 	});
+
+	$('.pop_up').find('i').on('click', function() {
+		// $('.pop_up').addClass('pop_up_out');
+		// $('.pop_up').removeClass('pop_up').addClass('pop_up_out');
+		// $('.pop_up').attr('class','pop_up_out');
+		$('.pop_up').remove();
+	});
 });

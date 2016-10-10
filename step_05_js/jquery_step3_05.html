@@ -4,11 +4,28 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="./css/bin/reset.css">
+	<link rel="stylesheet" href="./my-icons-collection/font/flaticon.css">
+	<!-- <script src="https://use.fontawesome.com/461608e571.js"></script> -->
 	<script src="./js/jquery-1.12.4.min.js"></script>
 	<!-- <script src="./js/jquery-migrate-3.0.0.min.js"></script> -->
 	<script src="./js/jquery-ui.min.js"></script>
 	<title>Document</title>
 	<style>
+	/*popup*/
+	.pop_up{width: 100%; height: 100%; position: fixed; z-index:1000;
+		background-color:rgba(0,0,0,0.5); top: 0; left: 0;}
+	.pop_up_out{display: none;}
+
+	.pop_banner{width: 500px; height: 200px; background-color: #fff; 
+		border-radius:0.2rem; box-shadow:2px 2px 3px #fa0; top: 50%; left: 50%;
+		margin-left: -250px; margin-top:-100px; z-index: 100; position:absolute;
+		box-sizing:border-box; padding: 2rem;}
+	.pop_banner>h2{width: 100%; height: 2rem; font-size: 2rem;}
+	.pop_banner>button{position: absolute; right: 0; top: 0;
+		background-color: transparent;}
+	.pop_banner>button>i{color:#0af; font-size:3rem;}	
+
+	/*design*/
 		#wrap{min-width:60rem; width: 100%; height: auto; 
 			padding-top: 1rem; background-color: #ccc; overflow: hidden;}
 		header{width: 100%; height: 3rem; background-color: #f25;}
@@ -29,10 +46,20 @@
 			padding:0 0.3rem; border-right:1px solid #555;}
 		nav>ul>li:last-child{border: 0; padding-right:0;}
 		nav>ul>li:first-child{padding-left: 0;}
+		article{width: 100%; height: 5000px; background-color: #ccc;}
 	</style>
 </head>
 <body>
 	<div id="wrap">
+	<div class="pop_up">
+		<div class="pop_banner">
+			<h2>팝업 메뉴창</h2>
+			<button type="button">
+				<i class="flaticon-error-1"></i>
+				<span class="hidden">close pop up</span>
+			</button>
+		</div>
+	</div>
 		<header>
 			<h1>jquery_popup page</h1>
 			<nav>
