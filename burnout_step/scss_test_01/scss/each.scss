@@ -1,0 +1,9 @@
+
+$colors-list: #111 #222 #333 #444 #555;
+@each $current-color in $colors-list{
+  $i: index($colors-list, $current-color);
+  .stuff#{$i}{
+    color: $current-color;
+  }
+}
+ 

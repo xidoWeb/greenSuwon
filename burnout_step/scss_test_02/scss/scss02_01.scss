@@ -1,0 +1,109 @@
+// scss 고유 주석 css로 변환이 되지 않는다.
+/* css로 변환이 된다.!! */
+$main: #faa;
+$font: #334;
+$line_color: #440;
+
+$color_list:#145, #579, #000, #016, #fc1;
+$font_size:16px, 15px, 20px, 25px, 10px;
+$font_color:#fff, #ffa, #cff, #faf, #afa;
+
+// @each $a in $color_list {
+// 	$i:index($color-list, $a);
+// 		li:nth-child(#{$i}){
+// 			background-color: $a;
+// 		}
+// 	}
+// @each $a in $font_size {
+// 	$i:index($font_size, $a);
+// 		li:nth-child(#{$i}){
+// 			font-size: $a;
+// 		}
+// }
+// @each $a in $font_color {
+// 	$i:index($font_color, $a);
+// 		li:nth-child(#{$i}){
+// 			color: $a;
+// 		}
+// }
+
+@mixin arr($arr:$color_list){
+	@each $a in $arr {
+	$i:index($arr, $a);
+		&:nth-child(#{$i}){
+			background-color: $a;
+		}
+	}// @each
+}// @mixin 
+
+
+
+
+
+
+#wrap{color:lighten($font, 20%);
+	>ul{width: 100px; height: auto; background-color: #fff;
+		>li{list-style: none;
+			$c:#f06, #ccc,#faa, #aff, #ccf ;
+			@include arr($c);
+
+			// &:nth-child(1){color:lighten($font, 20%);}
+			// &:nth-child(2){color:darken($font, 10%);}
+			// &:nth-child(3){color:rgba($font, 0.5);}
+			// &:nth-child(4){color:#acc;}
+			// &:nth-child(5){color:rgba(#5cc, 0.7);}
+		}//li
+	}// ul
+}// #wrap
+
+
+/* for( 반복 ){}
+	 for(원하는 내용 in 전체배열){}
+	 each( in )
+	 forEach
+	
+*/
+
+
+
+$mob:600px;
+$tab:1024px;
+// $pc:;
+
+// @media screen and (max-width:$mob){
+// 	body{background-color: #0ff;}
+// }
+
+// @media screen and (min-width:$mob + 1) and (max-width:$tab - 1){
+// 	body{background-color: #0f5;}
+// }
+
+// @media screen and (min-width:$tab){
+// 	body{background-color: #7a5;}
+// }
+
+body{
+	background-color: #aaa;
+	 @media screen and (max-width:$mob){
+		background-color: #0ff;
+	 }
+	@media screen and (min-width:$mob + 1) and (max-width:$tab - 1){
+		background-color: #0f5;
+	 }
+	 @media screen and (min-width:$tab){
+		background-color: #7a5;
+	 }
+}
+
+#wrap{
+	color: #aaa;
+	 @media screen and (max-width:$mob){
+		color: #0ff;
+	 }
+	@media screen and (min-width:$mob + 1) and (max-width:$tab - 1){
+		color: #0f5;
+	 }
+	 @media screen and (min-width:$tab){
+		color: #7a5;
+	 }
+}

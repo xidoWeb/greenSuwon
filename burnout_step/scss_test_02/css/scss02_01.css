@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* css로 변환이 된다.!! */
+#wrap {
+  color: #5f5f7e; }
+  #wrap > ul {
+    width: 100px;
+    height: auto;
+    background-color: #fff; }
+    #wrap > ul > li {
+      list-style: none; }
+      #wrap > ul > li:nth-child(1) {
+        background-color: #f06; }
+      #wrap > ul > li:nth-child(2) {
+        background-color: #ccc; }
+      #wrap > ul > li:nth-child(3) {
+        background-color: #faa; }
+      #wrap > ul > li:nth-child(4) {
+        background-color: #aff; }
+      #wrap > ul > li:nth-child(5) {
+        background-color: #ccf; }
+
+/* for( 반복 ){}
+	 for(원하는 내용 in 전체배열){}
+	 each( in )
+	 forEach
+	
+*/
+body {
+  background-color: #aaa; }
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: #0ff; } }
+  @media screen and (min-width: 601px) and (max-width: 1023px) {
+    body {
+      background-color: #0f5; } }
+  @media screen and (min-width: 1024px) {
+    body {
+      background-color: #7a5; } }
+
+#wrap {
+  color: #aaa; }
+  @media screen and (max-width: 600px) {
+    #wrap {
+      color: #0ff; } }
+  @media screen and (min-width: 601px) and (max-width: 1023px) {
+    #wrap {
+      color: #0f5; } }
+  @media screen and (min-width: 1024px) {
+    #wrap {
+      color: #7a5; } }
+
+/*# sourceMappingURL=scss02_01.css.map */
