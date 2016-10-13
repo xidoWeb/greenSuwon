@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/bin/reset.css">
+	<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/src/cirtifycate.css">
+	<!--[if lte IE 9]>		
+		<script src="./ie/html5shiv/dist/html5shiv.min.js"></script>
+		<script src="./ie/ie7/IE9.js"></script>
+		<script src="./ie/PIE/PIE_IE678.js"></script>
+
+		<link rel="stylesheet" href="./css/src/cirtifycate_ie.css">
+	<![endif]-->
+	<!-- jQuery -->
+	<script src="./js/jquery/jquery-1.12.4.min.js"></script>
+	<script src="./js/jquery/jquery-ui.min.js"></script>
+	<title>cirtifycate</title>
+		<!-- <script src="./ie/PIE/PIE_IE9.js"></script> -->
+		<!-- <script src="./ie/Respond/dest/respond.min.js"></script> -->
+</head>
+<body>
+	<h1 class="hidden">
+	<span lang="ko">xido web 회원인증</span>
+	<span lang="en">xido web 회원인증</span>
+	<span lang="ru">xido web 회원인증</span>
+	<span lang="jp">xido web 회원인증</span>
+	</h1>
+	<div id="cirtifycate">
+		<h2 class="wfont">회원 인증 서비스</h2>
+		<div id="cirtifyBox">
+			<h3>휴대폰 인증</h3>
+			<p>입력하시는 정보는 암호화 되며,<br> 어떠한 비용도 발생하지 않습니다.</p>
+
+			<form action="#" method="post">
+				<fieldset>
+					<legend class="hidden">휴대폰 인증</legend>
+						<div class="sColor1">
+							<dl class="phone_num">
+								<dt><label for="first_num">휴대폰 번호</label></dt>
+								<dd><select name="" id="first_num">
+									<script>
+										(function($) {
+											for(var i=0, j=9; i<=j; i++){
+												$('select').append(
+													'<option value="01' +	i	+ '">01' +	i	+ '</option>'
+													);
+											}
+										})(this.jQuery);
+									</script>
+								</select></dd>
+								<dd><input type="tel" id="mid_num" name="" value="" maxlength="4"
+									placeholder="가운데 번호">
+									<label for="mid_num" class="hidden">
+										휴대폰 가운데번호 셋 또는 네자리를 입력하세요
+									</label>
+									</dd>
+								<dd><input type="tel" id="last_num" name="" value="" maxlength="4"
+									placeholder="마지막 번호">
+									<label for="last_num" class="hidden">
+										휴대폰 뒷번호 네자리를 입력하세요.
+									</label>
+								</dd>
+							</dl>
+							<dl class="telecom">
+								<dt>이동 통신사</dt>
+								<dd></dd>
+								<dd></dd>
+								<dd></dd>
+							</dl>
+						</div>
+						<div class="cirtifty_check bdline bdline_sColor2">
+							
+						</div>
+				</fieldset>
+				<fieldset>
+					<legend class="hidden">인증 확인 및 취소</legend>
+						<input type="submit" id="yes" name="yes" value="확인" class="mColor wfont">
+						<input type="reset" id="no" name="no" value="취소" class="sColor2 wfont">
+						<label for="yes" class="hidden">휴대폰 인증 확인</label>
+						<label for="no" class="hidden">휴대폰 확인 취소</label>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+
+
+	<script>	(function($) {})(this.jQuery);	</script>
+</body>
+</html>
