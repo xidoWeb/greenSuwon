@@ -4,6 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="./css/bin/reset.css">
+	<link rel="stylesheet" href="./css/src/source.css">
 	<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./css/src/join.css">
 	<!--[if lte IE 9]>		
@@ -18,7 +19,25 @@
 </head>
 <body>
 	<div id="join">
-		
+		<h2 class="hidden">join page</h2>
+		<form action="" method="post">
+			<fieldset class="bdline bdline_sColor2">
+				<legend class="hidden">기본 계정 설정</legend>
+			</fieldset>
+			<fieldset class="bdline bdline_sColor2">
+				<legend class="hidden">회원 별칭 설정</legend>
+			</fieldset>
+			<fieldset>
+				<legend class="hidden">개인 인적사항</legend>
+			</fieldset>
+			<fieldset class="conform">
+				<legend class="hidden">확인 및 취소</legend>
+				<input type="submit" id="ok" name="fin_ok" value="확인" class="mColor wfont">
+				<input type="reset" id="no" name="fin_no" value="취소" class="sColor1">
+				<label for="ok" class="hidden">회원가입 확인</label>
+				<label for="no" class="hidden">가입 취소</label>
+			</fieldset>
+		</form>
 	</div>
 
 
