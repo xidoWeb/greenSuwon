@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* cirtifycate.css */
 @import url("./source.css");
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
@@ -45,4 +46,53 @@ body{font-family: 'Nanum Gothic Coding', monospace;}
 			font-family: 'Nanum Gothic Coding', monospace; float: right;}
 		form>fieldset:last-of-type>input#yes{float: left;
 			background-image:url("../../img/join/join/btn_pat.png");
+=======
+/* cirtifycate.css */
+@import url("./source.css");
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+body{font-family: 'Nanum Gothic Coding', monospace;}
+
+#cirtifycate{width: 28.125rem; height: 22.8125rem; background-color: #dfd;	margin: 1rem;} 
+	h2{width: 100%; height: 4.625rem; padding-top:1.75rem; padding-left:2.1875rem;
+		box-sizing:border-box; font-size:1.375rem; font-weight: bold;
+		font-family: 'Nanum Gothic Coding', monospace;
+		background-color: #f06;
+		background-image:linear-gradient(60deg, #f06 70%, #ff80b3 70%, #ec6da0);}
+	#cirtifyBox{width: 100%; height: 18.125rem;	box-sizing:border-box; padding:1.125rem 2.375rem;}
+		#cirtifyBox>h3{font-size: 1.2rem; font-weight: bold; margin-bottom:0.5rem; 
+			padding-left: 0.5625rem;}
+		#cirtifyBox>p{font-size:1rem; height:auto; background-color: #fff; line-height:1.2rem;
+			margin-bottom:0.8125rem; padding-left: 0.5625rem;}
+
+		form{width: 100%; height: auto;}
+		form>fieldset{width: 100%; height: auto; box-sizing:border-box;}
+		form>fieldset:last-of-type{padding:0 90px; margin-top: 14px;}
+		
+		form div{width: 100%; height: auto; box-sizing: border-box; padding:22px 9px 18px;}
+			form dl{width: 100%; height: 20px; background-color: #faa;}
+			form dl>dt,
+			form dl>dd{width:75px; height: 100%; background-color: #3f9; float: left;
+				margin-right: 15px; font-size:0.825rem; letter-spacing:-0.0625rem;
+				line-height:20px;}
+			form dl>dd:last-of-type{margin-right: 0;}
+
+			.phone_num{margin-bottom: 18px;}
+			.phone_num>dd::before{content:"-"; margin-left:-10px;}
+			.phone_num>dd:first-of-type::before{content:"";}
+
+			.phone_num input, .phone_num select{width: 100%; height: 100%;
+				border:1px solid #5f5f5f; box-sizing:border-box; float: right;
+				line-height:20px; text-indent:0.05rem;}
+	
+
+	    .telecom{}
+
+		form .cirtifty_check{padding:12px 9px;}
+
+
+		form>fieldset:last-of-type>input{width: 70px; height: 40px; font-weight: bold;
+			font-family: 'Nanum Gothic Coding', monospace; float: right;}
+		form>fieldset:last-of-type>input#yes{float: left;
+			background-image:url("../../img/join/join/btn_pat.png");
+>>>>>>> master
 			text-shadow:0 0 2px #333;}

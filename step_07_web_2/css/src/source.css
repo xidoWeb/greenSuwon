@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* source.css */
 @charset "utf-8";
 
@@ -7,4 +8,15 @@
 .wColor{background-color: #fff;}
 .wfont{color:#fff;}
 .bdline{border-bottom:2px solid #fff;}
+=======
+/* source.css */
+@charset "utf-8";
+
+.mColor{background-color: #f06;}
+.sColor1{background-color: #ddd;}
+.sColor2{background-color: #5f5f5f;}
+.wColor{background-color: #fff;}
+.wfont{color:#fff;}
+.bdline{border-bottom:2px solid #fff;}
+>>>>>>> master
 .bdline_sColor2{border-color:#5f5f5f}
