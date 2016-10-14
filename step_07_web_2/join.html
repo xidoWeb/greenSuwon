@@ -23,7 +23,7 @@
 		<form action="" method="post">
 			<fieldset class="bdline bdline_sColor2">
 				<legend class="hidden">기본 계정 설정</legend>
-				<dl>
+				<dl class="join_01">
 					<dt><i class="symbol icon" aria-hidden="true"></i>
 						<label for="user" class="icon">
 							<span class="hidden">아이디 다섯에서 열다섯 자리를 입력하세요.</span>
@@ -38,6 +38,19 @@
 						</button>
 					</dd>
 				</dl>
+				<dl class="join_02">
+					<dt><i class="symbol icon" aria-hidden="true"></i>
+						<label for="pwd_01" class="icon">
+							<span class="hidden">비밀번호 다섯에서 열다섯 자리를 입력하세요.</span>
+						</label>
+					</dt>
+					<dd>
+						<input type="text" name="user" id="pwd_01" value="" placeholder="비밀번호입력" maxlength="15">
+					</dd>
+					<dd>
+						<span class="icon"><!-- image --></span>
+					</dd>
+				</dl>
 			</fieldset>
 			<fieldset class="bdline bdline_sColor2">
 				<legend class="hidden">회원 별칭 설정</legend>
@@ -49,8 +62,8 @@
 				<legend class="hidden">확인 및 취소</legend>
 				<input type="submit" id="ok" name="fin_ok" value="확인" class="hidden" />
 				<input type="reset" id="no" name="fin_no" value="취소" class="hidden" />
-				<label for="ok" ><span class="hidden">회원가입 확인</span></label>
-				<label for="no" ><span class="hidden">가입 취소</span></label>
+				<label for="ok" class="icon"><span class="hidden">회원가입 확인</span></label>
+				<label for="no" class="icon"><span class="hidden">가입 취소</span></label>
 			</fieldset>
 		</form>
 	</div>

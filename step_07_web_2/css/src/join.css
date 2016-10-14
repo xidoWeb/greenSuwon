@@ -1,4 +1,6 @@
 /* join.css */
+.icon{background-image: url("../../img/join/join/join_icon.png");
+background-repeat: no-repeat;}
 
 #join{width: 38.75rem; height:35rem; margin: 0 auto; border: 1px solid #767;}
 form{width: 100%; height: 100%;}
@@ -6,19 +8,36 @@ form>fieldset{width: 100%; height: auto; padding-bottom: 16px; padding-top: 22px
 form>fieldset:first-of-type{padding-top: 0;}
 /* fieldset 01 _  */
 form dl{width: 100%; height:30px; margin-bottom: 10px; padding-left: 8px; padding-right: 12px; box-sizing:border-box;}
-form dt{width: 94px; height:100%; float: left; margin-right:16px; background-color: #fac;}
-form dd{width: 240px; height: 100%; float: left; background-color: #acf; margin-right: 20px;}
-form dd:last-of-type{margin-right: 0;}
+form dt{width: 94px; height:100%; float: left; margin-right:16px;}
 
+.symbol{width: 16px; height: 20px; margin-top: 5px; display: block; float: left;}
+form dt>label{width: 60px; height:20px; margin-top: 5px; float: right; }
+
+form dd{width: auto; height: 100%; float: left; margin-right: 20px;}
+form dd:last-of-type{width:auto; margin-right: 0;}
+form dd>input[type="text"]{height: 100%; box-sizing:border-box;
+	border-radius:3px; border:2px solid #5f5f5f;}
+form dd>button{width:100px; height: 30px;}
+form dd>span{display: block; width: 230px; height: 20px; margin-top: 5px; }
+
+/* .join_01 */
+.join_01 dt>i{background-position: -50px 0;}
+.join_01 dt>label{background-position: -70px 0;}
+.join_01 dd>input{width: 240px;}
+.join_01 dd>button{background-position:-135px -160px;}
+
+/* .join_02 */
+.join_02 dt>i{background-position: -50px -20px;}
+.join_02 dt>label{background-position: -70px -20px;}
+.join_02 dd>input{width: 240px;}
+.join_02 dd>span{background-position:-280px 0;}
 
 
 
 
 /* conform_btn -------------------- */
 .conform{box-sizing:border-box; padding:0 130px;}
-.conform>label{width: 140px; height: 40px; float: left; cursor: pointer;
-	background-repeat: no-repeat; 
-	background-image: url("../../img/join/join/join_icon.png");}
+.conform>label{width: 140px; height: 40px; float: left; cursor: pointer;}
 .conform>input:focus {outline: none;}
 .conform>#ok:focus ~ [for="ok"]{outline:3px solid #fa0; box-shadow: 2px 2px 5px 2px #fa0;}
 .conform>#no:focus ~ [for="no"]{outline:3px solid #fa0; box-shadow: 2px 2px 5px 2px #fa0;}
