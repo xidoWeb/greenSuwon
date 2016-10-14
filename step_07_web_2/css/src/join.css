@@ -4,7 +4,23 @@
 form{width: 100%; height: 100%;}
 form>fieldset{width: 100%; height: auto; padding-bottom: 16px; padding-top: 22px;}
 form>fieldset:first-of-type{padding-top: 0;}
+/* fieldset 01 _  */
+form dl{width: 100%; height:30px; margin-bottom: 10px; padding-left: 8px; padding-right: 12px; box-sizing:border-box;}
+form dt{width: 94px; height:100%; float: left; margin-right:16px; background-color: #fac;}
+form dd{width: 240px; height: 100%; float: left; background-color: #acf;}
 
+
+
+
+
+/* conform_btn -------------------- */
 .conform{box-sizing:border-box; padding:0 130px;}
-.conform>input{width: 140px; height: 40px; float: left; font-weight: bold;}
-.conform>input#no{float: right;}
+.conform>label{width: 140px; height: 40px; float: left; cursor: pointer;
+	background-repeat: no-repeat; 
+	background-image: url("../../img/join/join/join_icon.png");}
+.conform>input:focus {outline: none;}
+.conform>#ok:focus ~ [for="ok"]{outline:3px solid #fa0; box-shadow: 2px 2px 5px 2px #fa0;}
+.conform>#no:focus ~ [for="no"]{outline:3px solid #fa0; box-shadow: 2px 2px 5px 2px #fa0;}
+
+.conform>label[for="ok"]{ background-position:-135px 0;}
+.conform>label[for="no"]{float: right; background-position:-135px -80px;}
