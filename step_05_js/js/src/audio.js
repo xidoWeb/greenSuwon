@@ -1,25 +1,21 @@
 // audio.js
-
-
 var index = 0;
 var music =	$('audio').get(0);
-var music_list = ['./multi/exam.mp3',
-                  './multi/exam2.mp3',
-                  './multi/exam3.mp3',
-                  './multi/exam4.mp3',
-                  './multi/exam5.mp3',
-                  './multi/exam6.mp3',
-                  './multi/exam7.mp3',
+var music_link = './multi/';
+var music_list = [
+									'exam.mp3',
+                  'exam2.mp3',
                   ];
 
-
 $('audio').append('<source>');
-$('audio > source').attr({'src': music_list[index]});
+// $('audio > source').attr({'src':music_link + music_list[index]});
 var play = function() {	music.play(); };
 var pause = function() {music.pause(); };
-// var index_play = function(index) {
-// 	$('audio > source').attr({'src': music_list[index]});
-// }
+var index_play = function(index) {
+	$('audio > source').attr({'src':music_link + music_list[index]});
+}
+
+index_play(index);
 
 $('.play').on('click', play);
 $('.stop').on('click', pause);
@@ -29,15 +25,28 @@ $('.stop').on('click', pause);
 // 	console.log(music_list[index]);
 // }
 
+$('.prev').on('click', function(){
+	index--;
+	index_play(index);
+	music.load();
+
+	if(index < 0){
+		index = music_list.length - 1;
+		index_play(index);
+		music.load();
+	}
+
+});
+
 $('.next').on('click', function() {
 	index++;
-	$('audio > source').attr({'src': music_list[index]});
+	index_play(index);
 	music.load();
 
 	if(index == music_list.length){
 		index = 0;
-		$('audio > source').attr({'src': music_list[index]});
-		 music.load();
+		index_play(index);
+		music.load();
 	}
 });
 
