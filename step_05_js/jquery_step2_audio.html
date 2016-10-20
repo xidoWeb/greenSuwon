@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/bin/reset.css">
+	<script src="./js/jquery-1.12.4.min.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
+	<title>player</title>
+	<style>
+		.music{width: 300px; height: 3rem; padding:0.5rem; background-color: #acc;}
+		.btn{margin-top: 1rem; padding: 0.5rem;}
+		button{padding:0.5rem 1.2rem; background-color:#555; color:#fff; 
+			border-radius:0.3rem; box-shadow:0.2rem 0.2rem 0.2rem #171717; 
+			transition:0.3s; margin:0.5rem;}
+		button:hover{background-color: #acf; box-shadow:none;}
+		button:active{background-color:#fff; 
+			box-shadow:0.1rem 0.1rem 0.1rem #171717 inset; color:#171717;}
+	</style>
+</head>
+<body> 
+	<div class="music">
+		<audio>
+			<!-- <source src="./multi/exam.mp3" type="audio/mp3"/> -->
+		</audio>
+	</div>
+	<div class="btn">
+		<button type="button" class="play">play</button>
+		<button type="button" class="stop">stop</button>
+		<button type="button" class="next">next</button>
+	</div>
+
+	<!-- jQuery -->
+	<script src="./js/src/audio.js">
+		$(function() {});
+	</script>
+</body>
+</html>
