@@ -36,9 +36,11 @@ $('.prev').on('click', function(){
 		index = music_list.length - 1;
 		index_play(index);
 		music.load();
+		music.play();
 	}else{
 		index_play(index);
 		music.load();
+		music.play();
 	}
 });
 
@@ -47,10 +49,11 @@ $('.next').on('click', function() {
 	if(index == music_list.length){
 		index = 0;
 		index_play(index);
-		music.load();
+		music.load().play();
 	}else{
 		index_play(index);
 		music.load();
+		music.play();
 	}
 });
 
