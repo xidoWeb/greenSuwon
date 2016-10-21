@@ -36,7 +36,13 @@ right.on('click', function() {
 		box.find('li:first').appendTo(box);
 		box.css({marginLeft:'-100%'});
 	});
-})
+});
 
+$(window).on('mousewheel DOMMouseScroll',function() {
+	box.stop().animate({marginLeft: '-200%'}, 500, function() {
+			box.find('li:first').appendTo(box);
+			box.css({marginLeft:'-100%'});
+		});
+});
 
 // })(this.jQuery);
