@@ -76,6 +76,10 @@ $('.next').on('click', function() {
 	.play(): multi 기능을 재생
 	.pause(): multi 기능을 일시정지
 
-	배열형식을 활용!!, 가사 or 제목등을표기시 객체형식(결론: json)
+
+	//배열형식을 활용!!, 가사 or 제목등을표기시 객체형식(결론: json)
 */
+
+
+
 
