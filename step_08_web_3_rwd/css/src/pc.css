@@ -1,5 +1,25 @@
 /* pc.css */
 @media screen and (min-width:1024px){
-	body{background-color: #afc;}
+	#headBox{width:60rem; min-height:2.875rem; background-color: #a1a;
+		margin: 0 auto; position: relative;}
+	#headBox::before, 
+	#gnb::before, 
+	#footBox::before{content:" "; display: block; width: 100vw; height: 100%; 
+	position: absolute; left: 50%; top: 0; margin-left:-50vw; z-index:-100; 
+	background-color:#ccc;}
+
+	#gnb{width:60rem; height:132px; height:8.25rem; background-color: #f37; margin: 0 auto;position: relative;}
+	
+	#addBanner{
+		/*width: calc(100% - 56px); 
+		width: -webkit-calc(100% - 56px); 
+		width: -moz-calc(100% - 56px); 
+		width: -ms-calc(100% - 56px); 
+		width: -o-calc(100% - 56px); */
+		width: 100%; box-sizing: border-box; padding:0 1.75rem;
+		min-height:21.875rem; height:34.1796875vw; background-color: #f54;}
+	#content{width:60rem; height: 53.75rem; margin: 0 auto; background-color: #f72;}
+	#footBox{width:60rem; height:9.25rem; margin: auto; background-color: #f90;
+		position: relative;}
 
 }
