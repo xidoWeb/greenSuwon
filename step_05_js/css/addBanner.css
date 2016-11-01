@@ -4,7 +4,7 @@ h1{width: 80vw; height: 1.5rem; margin: 0 auto; margin-bottom: 1rem;
 	border-bottom:1px solid #777;	text-align: center; line-height: 1.5rem; font-size: 1.3em;}
 #addBanner{min-width: 960px; width: 90%; height: 50vw; border:1px solid #393; margin: 0 auto;
 	position: relative;}
-
+/*#wrap{height: 200vw; width: 100%;}*/
 	.btn{width: 5rem; height: 5rem; border-radius:5rem;	background-color:rgba(200,200,200,0.5);
 		position: absolute; top: 50%; margin-top: -2.5rem; }
 

@@ -1,0 +1,36 @@
+/* reset.css */
+html, body{width: 100%; height: 100%;}
+html, body, h1, h2, h3, h4, h5, h6, 
+div, p, pre, img, ul, ol, li, dt, dd, dl, 
+form, fieldset, legend, table, tr, td, th, 
+input, button, textarea, i, em{margin: 0; padding: 0; border: 0;
+ font-style:normal; font-size:100%; line-height:1.2; color:#333;
+ font-family:"myriad pro", arial, "맑은고딕", malgunGothic,"돋움", dotum, sans-serif;}
+ul,ol,li{list-style: none;}
+a{text-decoration: none; color:#555;}
+table, thead, tbody, tfoot, tr, td, th { 
+	border-spacing:0; border-collapse:collapse; text-indent:5px;
+	border:1px solid #555; border-left:0; border-right:0;}
+thead{background-color: #ddd; border-bottom:2px solid #555;}
+button, [type="button"], [type="submit"], [type="reset"]{cursor: pointer; border:0;}
+a:focus, input:focus, button:focus, textarea:focus, select:focus{
+	outline:2px solid #fa0; outline-offset:3px; position:relative; z-index:1000;}
+
+/* html5 */
+header, nav, article, section, footer, aside{display: block;}
+
+/* input */
+[type="text"],
+[type="password"],
+[type="url"],
+[type="email"],
+[type="tel"],
+[type="number"]{text-indent:5px;}
+
+/* common.css */
+/*.clearfix{display: block; clear: both;}*/
+.clearfix:before, 
+.clearfix:after{content:" "; display: block; clear: both;}
+.link a{width: 100%; height: 100%; display: block; background-repeat: no-repeat;}
+.hidden, .link a>span{width: 0; height: 0; display: block; overflow: hidden;}
+.ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}

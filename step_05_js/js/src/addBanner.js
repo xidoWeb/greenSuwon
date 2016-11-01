@@ -38,11 +38,28 @@ right.on('click', function() {
 	});
 });
 
-$(window).on('mousewheel DOMMouseScroll',function() {
-	box.stop().animate({marginLeft: '-200%'}, 500, function() {
+//mousewheel DOMMouseScroll
+$(window).on('mousewheel DOMMouseScroll',function(e) {
+	// box.stop().animate({marginLeft: '-200%'}, 500, function() {
+	// 		box.find('li:first').appendTo(box);
+	// 		box.css({marginLeft:'-100%'});
+	// 	});
+var evt = e.originalEvent.detail;
+		if(evt < 0) {
+	    box.stop().animate({marginLeft: '-200%'}, 500, function() {
 			box.find('li:first').appendTo(box);
 			box.css({marginLeft:'-100%'});
-		});
+			});
+    }else {
+	    box.stop().animate({marginLeft: 0}, 500, function() {
+			box.find('li:last').prependTo(box);
+			box.css({marginLeft:'-100%'});
+	});
+     }
+
+     //prevent page fom scrolling
+     return false;
 });
+
 
 // })(this.jQuery);
