@@ -1,5 +1,10 @@
 /* tab.css */
 @media screen and (min-width:768px) and (max-width:1023px) {
-	body{background-color: #cc7;}
+
+	#headBox{width:100%; min-height:2.875rem; height: 5.989583vw; background-color: #a1a;}
+	#gnb{width: 100%; min-height:8.125rem; height: 16.927683vw; background-color: #f37;}
+	#addBanner{width: 100%; min-height:21.875rem; height:45.572916vw; background-color: #f54;}
+	#content{width: 100%; min-height:14.625rem; height: 30.46875vw; background-color: #f72;}
+	#footBox{width: 100%; height:11.25rem; background-color: #f90;}	
 	
-}
+}/* tab.css*/
