@@ -1,9 +1,9 @@
 /* mob.css */
 @media screen and (max-width:767px){
 	
-	#headBox{width:100%; min-height:3.375rem; height:16.875vw;}
-		h1{min-width:122px; width:38.125vw; min-height:2.125rem; height:10.625vw; 
-			margin-top:0.5rem; margin-left:1.375rem;}
+	#headBox{width:100%; min-height:3.375rem; height:16.875vw;
+		box-sizing: border-box; padding:0.5rem 1.375rem 0;}
+		h1{width:38.125vw;  height:10.625vw;}
 		
 
   #gnb{width: 100%; height:14.75rem; background-color: #f37;}

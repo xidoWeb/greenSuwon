@@ -1,9 +1,18 @@
 /* base.css */
 
 	#headBox{background-color: #000;}
-		h1{width:7.625rem; height:2.125rem; float: left;}
+		h1{min-width:7.625rem; min-height:2.125rem; width:7.625rem; height:2.125rem; float: left;}
 		h1>a{display: block; width: 100%; height: 100%; 
 			background-image: url("../../img/logo_h1.png");
 			background-repeat:no-repeat; background-size:120%;
 			background-position:center;}
 		h1 span{display: block; width: 0; height: 0; overflow: hidden;}
+		
+		.unb{float: right;}
+		.unb button{background-color: transparent;}
+		.unb button>i{color:#fff;}
+		.unb button>span{display: block; width: 0; height: 0; overflow: hidden;}
+
+		.unb li:last-child{display: none;}
+		.unb li, .unb a{color:#fff;}
+		.unb span{color:#ff232a;}
