@@ -7,12 +7,19 @@
 			background-repeat:no-repeat; background-size:120%;
 			background-position:center;}
 		h1 span{display: block; width: 0; height: 0; overflow: hidden;}
-		
+
 		.unb{float: right;}
 		.unb button{background-color: transparent;}
 		.unb button>i{color:#fff;}
 		.unb button>span{display: block; width: 0; height: 0; overflow: hidden;}
 
 		.unb li:last-child{display: none;}
-		.unb li, .unb a{color:#fff;}
+		.unb li{margin-left:1rem; float: left;}
+		.unb li::after{content:" "; display: block; width: 0; height:1rem; 
+									border-right:1px solid #fff; float: left; margin-left:-0.5rem;}
+		.unb li:first-child{margin-left: 0;}
+
+		.unb li:first-child::after{display: none;}
+
+		.unb li, .unb a{color:#fff; text-transform:uppercase; word-spacing:-0.2rem;}
 		.unb span{color:#ff232a;}
