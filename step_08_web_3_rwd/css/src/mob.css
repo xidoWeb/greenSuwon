@@ -1,7 +1,11 @@
 /* mob.css */
 @media screen and (max-width:767px){
 	
-	#headBox{width:100%; min-height:3.375rem; height:16.875vw; background-color: #a1a;}
+	#headBox{width:100%; min-height:3.375rem; height:16.875vw;}
+		h1{min-width:122px; width:38.125vw; min-height:2.125rem; height:10.625vw; 
+			margin-top:0.5rem; margin-left:1.375rem;}
+		
+
   #gnb{width: 100%; height:14.75rem; background-color: #f37;}
   #addBanner{width: 100%; min-height:10.5rem; height: 52.5vw; background-color: #f54;}
   #content{width: 100%; min-height:728px; height: 227.5vw; background-color: #f72;}
