@@ -20,6 +20,7 @@ $(function() {
 	var $width = $(window).width();
 
 		if($width < 768){
+			
 		// mobile 에서의 작동 내용	
 		 var unb = $('.unb');
 		 var menu_btn = unb.find('button');
@@ -30,9 +31,9 @@ $(function() {
 		 });
 
 		}else if( (768 <= $width) && ($width < 1024) ){
-
+			
 		}else{
-
+			
 		}
 
 
