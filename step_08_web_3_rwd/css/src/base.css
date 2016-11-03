@@ -1,5 +1,6 @@
 /* base.css */
 
+/* #headBox ------------------------------------ */
 	#headBox{background-color: #000;}
 		h1{min-width:7.625rem; min-height:2.125rem; width:7.625rem; height:2.125rem; float: left;}
 		h1>a{display: block; width: 100%; height: 100%; 
@@ -23,3 +24,5 @@
 
 		.unb li, .unb a{color:#fff; text-transform:uppercase; word-spacing:-0.2rem;}
 		.unb span{color:#ff232a;}
+
+/* #gnb ------------------------------------ */
