@@ -18,12 +18,9 @@
 
 
 /* #gnb ------------------ */
-  #gnb{width: 100%; height:14.75rem; background-color: #fff;}
-  #gnb>ul{width:inherit; height:inherit; }
-	#gnb>ul>li{width:50%; height:50%; float: left; position: relative;}
-		#gnb>ul>li:nth-child(2n-1)::after{content:" "; display:block; height: 80%; 
-			 border-right:1px solid #777; position:absolute; top: 10%; right:0;}
-		/*#gnb>ul>li:nth-child(2n)::after{border-right:0;}*/
+  #gnb{height:14.75rem;}
+	#gnb>ul>li{width:50%; height:50%;}
+	#gnb>ul>li:nth-child(2n)::after{border-right:0;}
 
   #addBanner{width: 100%; min-height:10.5rem; height: 52.5vw; background-color: #f54;}
   #content{width: 100%; min-height:728px; height: 227.5vw; background-color: #f72;}

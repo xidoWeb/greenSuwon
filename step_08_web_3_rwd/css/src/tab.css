@@ -7,8 +7,9 @@
 		.unb{margin-top:1rem;}
 		.unb h2{width: 0; height: 0; overflow: hidden;}
 
-
-	#gnb{width: 100%; min-height:8.125rem; height: 16.927683vw; background-color: #f37;}
+/* #gnb ------------------ */
+	#gnb{min-height:8.125rem; height: 16.927683vw;}
+	 
 	#addBanner{width: 100%; min-height:21.875rem; height:45.572916vw; background-color: #f54;}
 	#content{width: 100%; min-height:14.625rem; height: 30.46875vw; background-color: #f72;}
 	#footBox{width: 100%; height:11.25rem; background-color: #f90;}	

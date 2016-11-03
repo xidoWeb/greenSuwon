@@ -12,9 +12,10 @@
 	#footBox::before{content:" "; display: block; width: 100vw; height: 100%; 
 	position: absolute; left: 50%; top: 0; margin-left:-50vw; z-index:-100; 
 	background-color:#ccc;}
+/* #gnb ------------------------------- */
 
-	#gnb{width:60rem; height:132px; height:8.25rem; background-color: #f37; margin: 0 auto;position: relative;}
-	
+	#gnb{width:60rem; height:132px; height:8.25rem; margin:0 auto; position: relative;}
+		
 	#addBanner{
 		/*width: calc(100% - 56px); 
 		width: -webkit-calc(100% - 56px); 
