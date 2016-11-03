@@ -1,0 +1,6 @@
+@media screen and (max-width:767px){#headBox{width:100%;min-height:3.375rem;height:16.875vw;box-sizing:border-box;padding:.5rem 1.375rem 0}h1{width:38.125vw;height:10.625vw}
+.unb{min-width:1.625rem;width:8.125vw;min-height:1.375rem;height:6.875vw}.unb h2{width:100%;height:auto;float:right}.unb h2 button{width:inherit;height:inherit}
+.unb h2 i{font-size:6.875vw}.unb ul{width:calc(100vw - 2.75rem);height:12.5vw;background-color:#fac;float:right;margin-right:-1.375rem;margin-top:10vw;box-sizing:border-box;padding:4.9vw .5rem;background-color:#000;display:none}
+.unb ul>li{float:left;font-size:4vw}.unb ul>li::after{height:4.5vw}#gnb{height:14.75rem}#gnb>ul>li{width:50%;height:50%}#gnb>ul>li:nth-child(2n)::after{border-right:0}
+#addBanner{width:100%;min-height:10.5rem;height:52.5vw;background-color:#f54}#content{width:100%;min-height:728px;height:227.5vw;background-color:#f72}
+#footBox{width:100%;min-height:11rem;height:55vw;background-color:#f90}}

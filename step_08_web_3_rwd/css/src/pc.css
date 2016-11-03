@@ -11,11 +11,12 @@
 	#headBox::before, #gnb::before, 
 	#footBox::before{content:" "; display: block; width: 100vw; height: 100%; 
 	position: absolute; left: 50%; top: 0; margin-left:-50vw; z-index:-100; 
-	background-color:#ccc;}
+	background-color:inherit;}
 /* #gnb ------------------------------- */
 
 	#gnb{width:60rem; height:132px; height:8.25rem; margin:0 auto; position: relative;}
-		
+
+/* #addBanner ------------------------*/
 	#addBanner{
 		/*width: calc(100% - 56px); 
 		width: -webkit-calc(100% - 56px); 
@@ -24,6 +25,24 @@
 		width: -o-calc(100% - 56px); */
 		width: 100%; box-sizing: border-box; padding:0 1.75rem;
 		min-height:21.875rem; height:34.1796875vw; background-color: #f54;}
+
+	.banner_btn{display: none;}
+	#viewBox{min-width:42.5rem; width:73.75271%; min-height:17.9375rem; height:28.027343vw; 
+		float:left; background-color:#acc;}
+	#bannerBox{min-width:15.125rem; width:26.24729%; min-height:21.875rem; height:34.179687vw; 
+		float:right; background-color:#aaa;}
+	#bannerBox>ul{width: 100%; height: 100%;}
+	#bannerBox>ul>li{width: 100%; height: calc(100% / 3); box-sizing:border-box;
+		border:2rem solid #ff5555; border-bottom:0; position: relative; padding:1rem;}
+		#bannerBox>ul>li:last-child{border-bottom:2rem solid #ff5555;}
+		#bannerBox>ul>li:first-child::before{content:" "; display: block; width: 100%; height: 100%; border:0.7rem solid #171717; position: absolute; z-index: 100; top: -0.7rem; left: -0.7rem; 
+			box-shadow:0.3rem 0.3rem 0.3rem #171717 inset;}
+		#bannerBox>ul>li:first-child::after{content:" "; display: block; width: 1rem; height: 1rem;position: absolute; top: 50%; left:-1.2rem; margin-top: -0.5rem ;background-color: #171717;  transform: rotate(45deg);}
+
+	#sns{min-width:42.5rem; width:73.75271%;  min-height:3.9375rem; height: 6.152343vw; 
+		float: left; background-color: #ac1;}
+
+/* #content --------------------*/		
 	#content{width:60rem; height: 53.75rem; margin: 0 auto; background-color: #f72;}
 	#footBox{width:60rem; height:9.25rem; margin: auto; background-color: #f90;
 		position: relative;}

@@ -21,8 +21,24 @@
   #gnb{height:14.75rem;}
 	#gnb>ul>li{width:50%; height:50%;}
 	#gnb>ul>li:nth-child(2n)::after{border-right:0;}
-
+/* #addBanner ------------------- */
   #addBanner{width: 100%; min-height:10.5rem; height: 52.5vw; background-color: #f54;}
+  .banner_btn{display: none;}
+
+	#viewBox{display: none;}
+
+	#bannerBox{width: 100%; min-height:8.625rem; height:43.125vw; background-color: #afc;}
+	
+	#bannerBox>ul{width:100%; height: 100%;}
+	#bannerBox>ul>li{display: none;}
+	#bannerBox>ul>li:first-child{display: block; width: 100%; height: 100%;}
+
+	#sns{width: 100%; min-height:1.875rem; height: 9.375vw;}
+	#sns>ul{width: 100%; height: 100%; }
+	#sns>ul>li{width: calc(100% / 3); height: 100%; float:left;}
+	#sns>ul>li>a{width: 100%; height: 100%; display: block;}
+
+/* #content ---------------------------*/
   #content{width: 100%; min-height:728px; height: 227.5vw; background-color: #f72;}
   #footBox{width: 100%; min-height:11rem; height: 55vw; background-color: #f90;}	
 
