@@ -39,7 +39,19 @@
 	#sns>ul>li>a{width: 100%; height: 100%; display: block;}
 
 /* #content ---------------------------*/
-  #content{width: 100%; min-height:728px; height: 227.5vw; background-color: #f72;}
+  #content{width: 100%; min-height:45.5rem; height:auto; background-color: #f72;
+  	padding:0.625rem; box-sizing: border-box;}
+	#content>dl{width: 100%; height: auto;}
+	#content>dl>dt{text-transform: uppercase; font-size:1.5rem; 
+		margin-top: 1.25rem; margin-bottom: 0.5rem;}
+	#content>dl>dt::before{content:" "; display:inline-block;
+		width:1.375rem; height:1.375rem; margin-right: 0.5rem;
+		background-image: url("../../img/content_icon.png"); }
+	#content>dl>dd{width: 100%; min-height: 11.25rem; height:56.25vw; 
+		background-color: #fff;	display: none;}
+	#content>dl>dd:first-of-type{display: block;}
+	
+/* #footBox ---------------------------*/
   #footBox{width: 100%; min-height:11rem; height: 55vw; background-color: #f90;}	
 
 }/* mob.css */

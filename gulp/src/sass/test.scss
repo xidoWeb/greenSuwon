@@ -1,0 +1,19 @@
+$bg1 : #acc;
+$bg2 : #aca;
+$box : 100px;
+
+@mixin bg($url){
+	width: 100%; height: 100%; display: block;
+	background-repeat: no-repeat;
+	background-image: url($url);
+	background-position: 0 0;
+}
+
+body{background-color: $bg1;
+	>header{width:$box; height:$box; background-color: $bg2;}
+	>h1{width: 300px; height: 300px;
+		>a{@include bg('../img/test.jpg');
+			&:hover{@include bg('../img/test.on.jpg');}
+		}// a
+	}// h1
+}
