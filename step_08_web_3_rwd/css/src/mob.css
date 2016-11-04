@@ -50,10 +50,17 @@
 	#content>dl>dd{width: 100%; min-height: 11.25rem; height:56.25vw; 
 		background-color: #fff;	display: none;}
 	#content>dl>dd:first-of-type{display: block;}
-	
-/* #footBox ---------------------------*/
-  #footBox{width: 100%; min-height:11rem; height: 55vw; background-color: #f90;}	
 
+/* #footBox ---------------------------*/
+  #footBox{width: 100%; min-height:11rem; height: 55vw; background-color: #f90;
+  	box-sizing: border-box; padding:2rem;}	
+	#footBox>h2{width: 13.75rem; height: 3.4375rem; background-color: #cca; margin: auto;}
+	.footer_sns{width: 80%; height: 2.8125rem; margin: auto; margin-top: 1.5rem; }
+	.footer_sns>li{width: 2.8125rem; height: 2.8125rem; float: left; background-color: #aca;}
+	.footer_sns>li:nth-child(2){margin-left:calc(50% - 4.21875rem);}
+	.footer_sns>li:last-child{float: right;}
+	address{width: 100%; height: 30px; background-color: #fff; margin-top: 1rem;
+		text-align: center;}
 }/* mob.css */
 
 /* 기본 형태 작업후 768까지 작업 (max-width:768px) */

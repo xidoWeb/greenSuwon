@@ -39,7 +39,8 @@
 	#sns>ul>li>a{width: 100%; height: 100%; display: block;}
 
 /* #content ----------------------- */
-	#content{width: 100%; min-height:14.625rem; height: 30.46875vw; background-color: #f72;}
+	#content{width: 100%;/* min-height:14.625rem; height: 30.46875vw;*/ height: auto; background-color: #f72; padding-bottom:2rem;}
+	#content::after{content:" "; display: block; clear: both;}
 	#content>dl{width: calc(100% / 3); height: auto; float: left; box-sizing:border-box;
 		padding:0 0.5rem;}
 	#content>dl>dt{text-transform: uppercase; font-size:1.5rem; 
