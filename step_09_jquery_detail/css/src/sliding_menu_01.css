@@ -90,15 +90,21 @@ article{height: 200%; background-color: #cfa;}
 #accodionV>dl>dd{width: 100%; box-sizing:border-box; padding: 1.5rem; display: none;}
 
 /*아코디언 메뉴 가로형*/
-#accodianH{width: 80%; height: 70vh; margin:10vh 10%; background-color: #fac;}
+#accodianH{width: 80%; height: 70vh; margin:10vh 10%; background-color: #fff; overflow: hidden;}
 #accodianH>h2{padding-top: 1rem; padding-bottom: 0.5rem; border-bottom:2px solid #333;}
-#accodianH>dl{width: 100%; height:70%; border:1px solid #171717; box-sizing:border-box;}
-#accodianH>dl>dt{width:2rem; height: 100%; background-color: #da9; 
+#accodianH>dl{width: 103%; height:70%; box-sizing:border-box;}
+#accodianH>dl>dt{width:2rem; height: 100%; background-color: #da9; cursor: pointer;
 	border-right:1px solid #fff; float: left; box-sizing: border-box;	padding:1rem;}
+#accodianH>dl>dt:hover{}
 	#accodianH>dl>dt>span{display: block; transform: rotate(-90deg) translate(-3rem); color:#fff;}
 #accodianH>dl>dd{width:30%; height: 100%; background-color: #fff; float: left; 
 	box-sizing: border-box;	padding:1rem;}
 
-#accodianH>dl>dd{width:0; transition:0.5s; overflow: hidden;}	
+#accodianH>dl>dd{width:0; overflow: hidden;}	
 /*#accodianH>dl>dt:hover + dd{width:50%;}*/
 
+.wrap{width: 100%; height: 100%;}
+.wrap>h3{height: 3rem; min-width:10rem; width: 100%;margin-bottom: 1rem; 
+	font-size: 1.3em; color:#863;}
+.wrap>picture{width: 100%; height: auto;}
+.wrap>picture>img{height: 100%;}

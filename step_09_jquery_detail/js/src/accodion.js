@@ -10,9 +10,13 @@ $(function() {
 	});
 
 	// 아코디언 가로형
-	// var accoH = $('#accodianH');
-	// accoH.find('dt').on('mouseenter', function() {
-	// 	accoH.find('dd').stop().animate({width:0},300);
-	// 	$(this).next('dd').stop().animate({width:50+'%'},500);
-	// });
+
+	var accoH = $('#accodianH');
+	var acc  = accoH.find('dd:first-of-type').css({width:72 + '%'})
+	console.log();
+
+	accoH.find('dt').on('click', function() {
+		accoH.find('dd').stop().animate({width:0},500);
+		$(this).next('dd').stop().animate({width:72+'%'},500);
+	});
 });
