@@ -100,6 +100,5 @@ article{height: 200%; background-color: #cfa;}
 	box-sizing: border-box;	padding:1rem;}
 
 #accodianH>dl>dd{width:0; transition:0.5s; overflow: hidden;}	
-/*
-#accodianH>dl>dt:hover + dd{width:50%;}
-*/
+/*#accodianH>dl>dt:hover + dd{width:50%;}*/
+

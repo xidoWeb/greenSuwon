@@ -10,9 +10,9 @@ $(function() {
 	});
 
 	// 아코디언 가로형
-	var accoH = $('#accodianH');
-	accoH.find('dt').on('mouseenter', function() {
-		accoH.find('dd').stop().animate({width:0},300);
-		$(this).next('dd').stop().animate({width:50+'%'},500);
-	});
+	// var accoH = $('#accodianH');
+	// accoH.find('dt').on('mouseenter', function() {
+	// 	accoH.find('dd').stop().animate({width:0},300);
+	// 	$(this).next('dd').stop().animate({width:50+'%'},500);
+	// });
 });
