@@ -22,7 +22,6 @@ $(function() {
 			h1_padding_t = $('h1').css('paddingTop');
 			h1_padding_b = $('h1').css('paddingBottom');
 			win_h = $(window).height();
-
 	// console.log(win_h);
 	// console.log( h1_h );
 	// console.log(parseInt(h1_padding_t) );
