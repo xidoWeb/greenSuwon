@@ -33,3 +33,16 @@ $(function() {
 			// return false;
 	});
 });
+
+// json
+var img_list = [
+    {img: 'car_01.jpg' , name: 'car_01'},
+    {img: 'car_02.jpg' , name: 'car_02'},
+    {img: 'car_03.jpg' , name: 'car_03'},
+    {img: 'car_04.jpg' , name: 'car_04'},
+    {img: 'car_05.jpg' , name: 'car_05'},
+	];
+
+	for(var i = 0;  i < img_list.length; i++){
+		console.log(img_list[i].name);
+	}
