@@ -15,13 +15,20 @@
 $(function() {
 	$('#gallery').find('a').on('click', function(e) {
 			e.preventDefault();
-
-			var data = $(this).children('img').attr('data-link');
+			// step_01
+			// var data = $(this).children('img').attr('data-link');
 			// console.log('버튼: ', data );
 			var data_alt = $(this).children('img').attr('data-alt');
 			// console.log('내용설명:', data_alt);
 
+
+			//step_02
+			var data = $(this).children('img').attr('src').slice(0,-9)+'.jpg';
+			console.log(data);
+
 			$('.gallery_box').find('img').attr({'src': data, 'alt':data_alt});
+
+
 
 			// return false;
 	});
