@@ -77,7 +77,7 @@ section>ul>li.banner_3{background-image:url('../../img/cars/car_03.jpg');}
 
 
 /* article */
-article{height: 200%; background-color: #cfa;}
+article{height: 100%; background-color: #cfa;}
 
 /*아코디언메뉴 세로형*/
 #accodionV{width: 40%; height: auto; margin:4rem; float: left;}
@@ -90,17 +90,17 @@ article{height: 200%; background-color: #cfa;}
 #accodionV>dl>dd{width: 100%; box-sizing:border-box; padding: 1.5rem; display: none;}
 
 /*아코디언 메뉴 가로형*/
-#accodianH{width: 80%; height: 70vh; margin:10vh 10%; background-color: #fff; overflow: hidden;}
-#accodianH>h2{padding-top: 1rem; padding-bottom: 0.5rem; border-bottom:2px solid #333;}
-#accodianH>dl{width: 103%; height:70%; box-sizing:border-box;}
-#accodianH>dl>dt{width:2rem; height: 100%; background-color: #da9; cursor: pointer;
+#accodionH{width: 80%; height: 70vh; margin:10vh 10%; background-color: #fff; overflow: hidden;}
+#accodionH>h2{padding-top: 1rem; padding-bottom: 0.5rem; border-bottom:2px solid #333;}
+#accodionH>dl{width: 103%; height:100%; box-sizing:border-box;}
+#accodionH>dl>dt{width:2rem; height: 100%; background-color: #da9; cursor: pointer;
 	border-right:1px solid #fff; float: left; box-sizing: border-box;	padding:1rem;}
-#accodianH>dl>dt:hover{}
+#accodionH>dl>dt:hover{}
 	#accodianH>dl>dt>span{display: block; transform: rotate(-90deg) translate(-3rem); color:#fff;}
-#accodianH>dl>dd{width:30%; height: 100%; background-color: #fff; float: left; 
+#accodionH>dl>dd{width:30%; height: 100%; background-color: #fff; float: left; 
 	box-sizing: border-box;	padding:1rem;}
 
-#accodianH>dl>dd{width:0; overflow: hidden;}	
+#accodionH>dl>dd{width:0; overflow: hidden;}	
 /*#accodianH>dl>dt:hover + dd{width:50%;}*/
 
 .wrap{width: 100%; height: 100%;}
@@ -108,3 +108,13 @@ article{height: 200%; background-color: #cfa;}
 	font-size: 1.3em; color:#863;}
 .wrap>picture{width: 100%; height: auto;}
 .wrap>picture>img{height: 100%;}
+
+/* gallery */
+#gallery{width: 100%; box-sizing: border-box; padding:1rem;}
+	.gallery_box{width: 70%; height:500px; overflow: hidden; margin-left: 10%;}
+	.gallery_box>img{width: 100%;}
+	#gallery>ul{margin-top: 1rem; border-top:3px solid #fac; height: auto;}
+	#gallery>ul>li{width: 300px; height: 150px; float: left; margin:0.3rem; overflow: hidden;
+		border-radius:1rem;}
+	#gallery>ul>li>a{display: block; width: 100%; height: 100%;}
+	#gallery>ul>li>a>img{width: 100%; height: auto;}

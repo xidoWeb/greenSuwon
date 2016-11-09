@@ -11,7 +11,7 @@ $(function() {
 
 	// 아코디언 가로형
 
-	var accoH = $('#accodianH');
+	var accoH = $('#accodionH');
 	accoH.find('dd:first-of-type').css({width:72 + '%'});
 
 	// 브라우저 화면에서 필요한 값을 가져와서 세팅할경우에 사용(.wrap내부의 h3가로값 고정)
