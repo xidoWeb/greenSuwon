@@ -8,14 +8,6 @@ $(function() {
 		{"link": "http://daum.net",	 "name": "다음"}
 		];
 
-
-// <header>
-// 			<h1><a href="index.html">webpage_link</a></h1>
-// 			<nav>
-			
-// 			</nav>
-// </header>
-
 // header 생성
 		var wrap = $('#container');
 		wrap.prepend('<header><h1><a>');
