@@ -1,0 +1,21 @@
+/* headBox.css */
+
+#container{width: 100%; min-width: 60rem; height: 100%; background-color: #acc;}
+header{width: 100%; height: 5rem; background-color: #fa7; box-sizing: border-box; padding-top: 1rem;}
+h1{width: 9.375rem; height: 3rem; font-size: 2rem; color:#f07; float: left;}
+nav{width: 37.5rem; height: 2rem; margin-top: 1rem; float: right;}
+nav>ul{width: 100%; height: 100%;}
+nav>ul>li{width: 20%; height: 2rem; float: left; margin-right: 5%; font-size: 1.2rem; text-align: center;
+	position: relative;}
+nav>ul>li:last-child{margin-right: 0;}
+nav>ul>li::after{content:" "; display: block; position: absolute; top: 0; right: -25%;
+	border-right:1px solid #fff; height: 70%; float: right;}
+nav>ul>li:last-child::after{display: none;}
+nav>ul>li>a{display: block; line-height: 1.2rem; width: 100%; height: 100%; transition:0.3s;}
+nav>ul>li>a:hover{font-size:1.3rem; font-weight: bold; color:#fff;}
+
+p{padding: 2rem; font-size: 2rem; }
+.index{color:#350;}
+.sub1{color:#f50;}
+.sub2{color:#fa0;}
+.guest{color:#31f;}

@@ -28,7 +28,7 @@ $(function() {
 			var $gal = $('#gallery>ul');
 		  var gallery_list_tag = '<li><a href="#"><img>';
 		  // $gal.append(gallery_list_tag);
-
+		  $gal.addClass("clearfix");
 		for(var i = 0;  i < img_list.length; i++){
 		// 	console.log(gallery_link+img_list[i].thumImg);
 			$gal.append( gallery_list_tag);
