@@ -29,7 +29,37 @@ $(function() {
 			$('#conBox').find('p').fadeIn(1000);
 		}	
 		if(scroll_top >= subBox_offset){
-			$('#subBox').find('img').fadeIn();
+			// 첫번째 방법(delay기능을 이용하여 시간순으로 나타나기)
+			// step_01
+			/*
+			$('#subBox').find('img:nth-of-type(1)').delay(0).fadeIn(500);
+			$('#subBox').find('img:nth-of-type(2)').delay(500).fadeIn(500);
+			$('#subBox').find('img:nth-of-type(3)').delay(1000).fadeIn(500);
+			$('#subBox').find('img:nth-of-type(4)').delay(1500).fadeIn(500);
+			$('#subBox').find('img:nth-of-type(5)').delay(2000).fadeIn(500);
+			*/
+			//step_02
+			var subBox = $('#subBox'),
+					subBox_img = $('#subBox').find('img'),
+					timed = 500;
+			// subBox_img.eq(?).delay(?).fadeIn(timed);
+			// console.log(subBox_img.length); // html내에서 존재하는 subBox내의 이미지수량 확인
+			for (var i = 0; i < subBox_img.length; i++) {
+				subBox_img.eq(i).delay(timed*i).fadeIn(timed);
+			}
+
+			// 두번째 방법(함수 기능을 이용하여 시간순으로 나타나기)
+			/*
+			$('#subBox').find('img').eq(0).fadeIn(500, function() {
+				$('#subBox').find('img').eq(1).fadeIn(500, function(){
+					$('#subBox').find('img').eq(2).fadeIn(500, function() {						
+						$('#subBox').find('img').eq(3).fadeIn(500, function() {
+							$('#subBox').find('img').eq(4).fadeIn(500);
+						});
+					});
+				});
+			});
+			*/
 		}
 
 
