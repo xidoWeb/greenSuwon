@@ -12,6 +12,24 @@ $(function() {
 	btn_top.on('click',function(e) {
 		e.preventDefault();
 		$('html, body').animate({scrollTop:0});
-	})
+	});
 
-})(this.jQuery);
+	var headbox = $('#headBox');
+	var head_offset = headbox.offset().top;
+	$(window).on('scroll', function() {
+		var scroll_top = $(window).scrollTop();
+		// headbox.addClass('fix');
+		headScroll(scroll_top);
+		// console.log(head_offset);
+		// console.log(scroll_top);
+	});
+
+	function headScroll(t) {
+
+		if(head_offset <= t){
+				headbox.addClass('fix');
+			}else{
+				headbox.removeClass('fix');
+			}
+	};
+});

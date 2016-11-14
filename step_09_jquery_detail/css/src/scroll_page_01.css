@@ -4,10 +4,12 @@
 		background-color: #530; 
 		box-sizing:border-box; 
 		padding: 1rem; padding-top: 2rem;
-		position: fixed;
+		position: absolute;
 		z-index:500;
-		top: 0; left: 0;
+		bottom: 0; left: 0;
 		}
+	#headBox.fix{position: fixed; top: 0 !important;}
+
 	h1{width: 100px; height: 100%; 
 		background-color: #fff;
 		float: left;}
