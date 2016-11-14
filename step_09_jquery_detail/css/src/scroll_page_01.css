@@ -4,6 +4,9 @@
 		background-color: #530; 
 		box-sizing:border-box; 
 		padding: 1rem; padding-top: 2rem;
+		position: fixed;
+		z-index:500;
+		top: 0; left: 0;
 		}
 	h1{width: 100px; height: 100%; 
 		background-color: #fff;
@@ -33,8 +36,9 @@
 	#topBtn>button:hover{font-size: 2rem; 
 		font-weight: bold;}
 
-	article{width: 100%; height:100vh;
-		border-bottom:1px solid #fa0;}
+	article{width: 100%; height:calc(100vh - 5rem);
+		border-bottom:1px solid #fa0;
+		padding-top: 5rem;}
 	#addBox{background-color: #7af;}
 	#conBox{background-color: #f7a;}
 	#subBox{background-color: #a7f;}
