@@ -1,0 +1,51 @@
+/* scroll_page_01.html */
+.content{width: 100%; height: auto; border-top: 3px solid #a6c;}
+	#headBox{width: 100%; height: 5rem; 
+		background-color: #530; 
+		box-sizing:border-box; 
+		padding: 1rem; padding-top: 2rem;
+		}
+	h1{width: 100px; height: 100%; 
+		background-color: #fff;
+		float: left;}
+		h1>a{display: block;
+		  width:100%; height: 100%;
+			text-align: center; line-height: 2rem;
+			font-size: 2rem;}
+	#gnb{min-width:400px; width: 40%;
+		height: 100%; float: right;
+		margin-right: 3rem;
+		background-color: #620;}
+		#gnb>ul{width: 100%; height: 100%;}
+		#gnb li{float: left; margin-right: 3rem;
+			height: 100%;}
+		#gnb li:last-child{margin-right: 0;}
+		#gnb li>a{color:#fff; font-size: 1.5rem;
+			transition:all 0.3s;}
+		#gnb li>a:hover{font-weight: bold;
+			text-decoration:underline;}
+	#topBtn{width: 100px;	height: 100px;
+		float: right; 
+		position: absolute; right: 1rem;
+		top:1rem;}
+	#topBtn>button{width: 100%; height: 100%;
+		font-size: 1.5rem; transition: 0.3s;}
+	#topBtn>button:hover{font-size: 2rem; 
+		font-weight: bold;}
+
+	article{width: 100%; height:100vh;
+		border-bottom:1px solid #fa0;}
+	#addBox{background-color: #7af;}
+	#conBox{background-color: #f7a;}
+	#subBox{background-color: #a7f;}
+	article>h2{font-size: 3rem; 
+		text-align: center;
+		padding-top: 3rem;
+		text-shadow:0.1rem 0.1rem 0.1rem #333;
+		color:#fff;}
+
+	#footer{width: 100%; height: 7rem;
+		background-color: #ccc; 
+		box-sizing: border-box;
+		padding: 1rem;
+		padding-top:2rem;}

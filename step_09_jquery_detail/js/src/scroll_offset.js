@@ -24,13 +24,17 @@ $(window).on('mousemove', function(e) {
 	var areay = e.pageY;
 	console.log('x좌표: ' + areax + '|' + 'y좌표: ' + areay);
 
-	if(areax < 100){
-		$('*').animate({backgroundColor:'#fac'});
-	}else if(areax < 300){
-		$('*').animate({backgroundColor:'#acf'});
-	}else{
-		$('*').animate({backgroundColor:'#c8f'});
-	}
+	mousearea(areax);
+	
 
 });
 
+function mousearea(areax) {
+	if(areax < 360){
+		$('.content').css({backgroundColor:'#fac'});
+	}else if(areax >= 360 && areax < 768){
+		$('.content').css({backgroundColor:'#acf'});
+	}else{
+		$('.content').css({backgroundColor:'#c8f'});
+	}
+};
