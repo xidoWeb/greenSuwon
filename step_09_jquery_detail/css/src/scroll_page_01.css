@@ -48,10 +48,17 @@
 		font-size: 1.5rem;
 		line-height:2rem;
 		display: none;}
+/* sub3Box-------------------------------- */
 	#subBox{background-color: #a7f;}
-	#subBox>img{width:300px; margin:1rem;
-		display: none;}
+	#subBox>img{width:300px; margin:1rem;	display: none;}
+
+/* sub3Box-------------------------------- */
 	#sub2Box{background-color: #7ff;}
+		.pagex_box{width: 800px; height: 400px; margin: 0 auto;
+			background-color: #fff; overflow: hidden;}
+		.pagex_box>img{width: 100%; height: auto;}
+
+/* sub3Box-------------------------------- */
 	#sub3Box{background-color: #af7;}
 	article>h2{font-size: 3rem; 
 		text-align: center;

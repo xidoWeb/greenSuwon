@@ -2,23 +2,22 @@
 
 $(function() {
 
-	var page_link = $('#headBox a');
+	var page_link = $('#headBox a'),
+			btn_top = $('#topBtn>button'),
+			headbox = $('#headBox'),
+	    head_offset = headbox.offset().top,
+	    conBox_offset = $('#conBox').offset().top,
+	    subBox_offset = $('#subBox').offset().top;
+
 	page_link.on('click', function(e) {
 		e.preventDefault();
 		$('html, body').animate({scrollTop:$(this.hash).offset().top});
 	});
 
-	var btn_top = $('#topBtn>button');
 	btn_top.on('click',function(e) {
 		e.preventDefault();
 		$('html, body').animate({scrollTop:0});
 	});
-
-	var headbox = $('#headBox'),
-	    head_offset = headbox.offset().top,
-	    conBox_offset = $('#conBox').offset().top,
-	    subBox_offset = $('#subBox').offset().top;
-
 	$(window).on('scroll', function() {
 		var scroll_top = $(window).scrollTop();
 		// headbox.addClass('fix');
@@ -47,7 +46,6 @@ $(function() {
 			for (var i = 0; i < subBox_img.length; i++) {
 				subBox_img.eq(i).delay(timed*i).fadeIn(timed);
 			}
-
 			// 두번째 방법(함수 기능을 이용하여 시간순으로 나타나기)
 			/*
 			$('#subBox').find('img').eq(0).fadeIn(500, function() {
@@ -61,10 +59,8 @@ $(function() {
 			});
 			*/
 		}
-
-
 	});
-
+// 반복처리하기위해 함수표기
 	function headScroll(t) {
 
 		if(head_offset <= t){
