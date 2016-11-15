@@ -31,11 +31,37 @@ $(function() {
 
 	 var offset_left_img = page_box.children('img').offset().left;
 	 var img_width = page_box.children('img').width();
-	 // console.log(img_width/5);
+	 // console.log(img_width/160); // 이미지 갯수로인한 몫 찾아내기
 	 page_box.on('mousemove',function(e) {
-	 	var pagex =  parseInt((e.pageX - offset_left_img) / 5);
-	 	console.log('마우스 가로위치: ', pagex);
-	 	page_box.children('img').attr({src:'./img/bents/car_' + pagex + '.png'});
+	 	// 찾아낸 몫으로 나눠서 전체 이미지에서 이미지 숫차로 처리
+	 	var pagex =  parseInt((e.pageX - offset_left_img) / 5); 
+	 	// console.log('마우스 가로위치: ', pagex);
+	 	page_box.children('img').attr({src:'./img/bents/car_' + pagex+1 + '.png'});
 	 });
+
+// ------------------------------------
+	$('body').append('<img class="mousepointer" src="./img/etc/rocket.png" alt="">');
+
+	$('.mousepointer').css({
+		width:'100px',
+		height:'auto',
+		borderRadius:'100%',
+		transform:'rotate(-45deg)',
+		position:'fixed',
+		zIndex:10000,
+		// top:'50%',
+		// left:'50%'
+	});
+	$(window).on('mousemove', function(e) {
+		var px = e.pageX;
+		var py = e.pageY;
+		$('.mousepointer').css({top:py-50, left:px-50});
+	});
+	$(window).on('mousedown',function() {
+		$('.mousepointer').attr({src:'./img/etc/rocket_on.jpg'});
+	});
+	$(window).on('mouseup',function() {
+		$('.mousepointer').attr({src:'./img/etc/rocket.png'});
+	});
 
 });
