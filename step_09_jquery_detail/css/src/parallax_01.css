@@ -1,0 +1,36 @@
+/* parallax_01.css */
+/* 
+* 이미지 해상도에따른 내용!
+* 논리 픽셀, 물리픽셀이해!!
+* 작업이 어느정도 진행된 상황에서 추가작업 권유!
+*/
+/*
+.logo{width: 600px; height: 120px;  background-color: #ddd; margin: 0 auto;
+			background-image: url("../../img/bird/logo.svg");
+			background-position:center center; background-repeat: no-repeat;}
+.icon{width: 250px; height: 258px; background-image: url("../../img/bird/icon_1.png"); 
+	background-repeat: no-repeat;	background-position: center;}
+@media screen and (max-width:768px) and (min-device-pixel-ratio:1.5), (min-resolution: 1.5dppx){
+		.icon{width: 250px; height: 258px; background-image: url("../../img/bird/icon_1@2x.png");
+			background-size: 100%;}
+}
+*/
+
+body{height: 3000px;}
+.bird_box{height: 600px; overflow: hidden;
+	background-image:url("../../img/bird/bg_img.png");background-repeat: no-repeat; 
+	background-position:center top;	background-attachment:fixed;	position: relative;
+	background-size:100% auto;}
+
+	.back_bird{width: 414px; height: 254px;
+		background-image:url("../../img/bird/back_bird.png");	background-repeat:no-repeat; 
+		background-position:center;	position: absolute; top: 5%; left:15%;	}
+
+	.logo{width:600px; height: 90px; 	background-image: url("../../img/bird/logo.svg");
+		background-repeat: no-repeat; background-position: center;	position: absolute;		
+		top: 50%; left: 50%; margin-top:-45px; margin-left: -300px;	z-index:500;}
+
+	.front_bird{
+		width: 204px; height: 316px; background-image: url("../../img/bird/front_bird.png");
+		background-repeat: no-repeat; background-position:center top;	position: absolute;
+		left: 70%; bottom: -15%;}
