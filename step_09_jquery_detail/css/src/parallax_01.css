@@ -28,7 +28,7 @@ body{height: 3000px;}
 
 	.logo{width:600px; height: 90px; 	background-image: url("../../img/bird/logo.svg");
 		background-repeat: no-repeat; background-position: center;	position: absolute;		
-		top: 50%; left: 50%; margin-top:-45px; margin-left: -300px;	z-index:500;}
+		top: 20%; left: 50%; margin-top:-45px; margin-left: -300px;	z-index:500;}
 
 	.front_bird{
 		width: 204px; height: 316px; background-image: url("../../img/bird/front_bird.png");
