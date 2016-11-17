@@ -35,18 +35,25 @@ $(function() {
 $('.wheel_area').on('mousewheel DOMMouseScroll', function(e) {
 		var evt = e.originalEvent;
 		var delta = 0;
+		var wheel_i = $(this).index();
 			//firefox 에서는 originalEvent내에 detail이 존재
 			if(!!evt.detail){
-					console.log(evt.detail*40);
-					$('p').text(evt.detail*40);
+				var wheel_delta = evt.detail;
+				if( wheel_delta > 0){
+					var wheel_h = (wheel_i+1) * win_h;
+				}else{
+					var wheel_h = (wheel_i-1) * win_h;
+				}
 			}
 			//그외 기능에서는 wheelDelta값이 존재
 			else{
-				//	evt.wheelDelta
-				var wheel_i = $(this).index();
-				var wheel_h = (wheel_i+1) * win_h;
-
-				$('html, body').animate({scrollTop:wheel_h});
+				var wheel_delta = evt.wheelDelta;
+				if( wheel_delta < 0){
+					var wheel_h = (wheel_i+1) * win_h;
+				}else{
+					var wheel_h = (wheel_i-1) * win_h;
+				}
 			}
+				$('html, body').stop().animate({scrollTop:wheel_h});
 	});
 });
