@@ -1,0 +1,20 @@
+/* mousewheel.css */
+
+#headBox{width: 100%; height: 100%; background-color: #fdf;}
+	#gnb{width:3rem; height: auto; position: fixed; top: 10%; right: 10%; z-index: 1000;}
+	#gnb>ul{width: 100%; height: auto;}
+	#gnb>ul>li{width: 100%; height: 1rem; margin-bottom:2rem; position: relative;}
+	#gnb>ul>li:last-child{margin-bottom: 0;}
+	#gnb>ul>li i{width: 1rem; height: 1rem; display: block;
+		background-color: #fff; box-shadow:1px 1px 1px #333; border-radius:100%;}
+		#gnb>ul>li span{display: block; width: 0;  padding: 0; overflow: hidden;
+			background-color: #0af; border-radius:0.3rem; 
+			position: absolute;	right: 3.5rem; top:0; 
+			color:#fff; font-weight: bold; transition:width,padding 0.5s;}
+		#gnb>ul>li:hover span{width: auto; padding:0.2rem 2rem;}
+
+#addBox{width: 100%; height: 100%; background-color: #aff;}
+#content{width: 100%; height: 100%; background-color: #faa;}
+#info{width: 100%; height: 100%; background-color: #f60;}
+#fnb{width: 100%; height: 100%; background-color: #06f;}
+#footBox{width: 100%; height: 100%; background-color: #ccc;}
