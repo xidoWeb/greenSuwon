@@ -1,0 +1,24 @@
+/* horizon_scroll.css */
+/* html, body{height: 100%;} */
+#wrap{width:500%; height:100%; margin: 0 auto; background-color: #afc;}
+	#headBox{width: 100%; height: 3rem; 
+		box-sizing: border-box; background-color: #ddd;
+		padding: 0.5rem 2rem;
+		position:fixed; z-index:1000;	left: 0; bottom: 0;}
+
+		h1{width: 100px; height: 100%; float: left; background-color: #fac;}
+		#gnb{width: calc(100% - 150px); height: 100%; float: right; 
+			background-color: #99f;}
+		#gnb>ul{width: 100%; height: 100%;}
+		#gnb>ul>li{float: left; margin-right:4rem; color:#fff; font-size: 2rem;
+			transition:0.2s;}
+		#gnb>ul>li:hover{transform:scale(1.2); color:#333;}
+		#gnb>ul>li:last-child{margin-right: 0;}
+		#gnb a{color:inherit;}
+	#wrap>div{width:20%; height: 100%; float: left;}
+	#area_1{background-color: #af5;}
+	#area_2{background-color: #ba6;}
+	#area_3{background-color: #c77;}
+	#area_4{background-color: #d58;}
+	#area_5{background-color: #e19;}
+	#wrap>div>h2{padding: 4rem; font-size: 3rem;}
