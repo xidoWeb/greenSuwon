@@ -16,10 +16,8 @@ h1{width: 100%; box-sizing:border-box; padding: 1rem; font-size: 2rem;
 	.banner_box{/* width: 400%; */ height: 100%; margin-left: -100%;}
 	.banner_box>li{/* width:calc(100% / 4); */ height: 100%; float: left;
 		font-size: 5rem;}
-		.banner_1{background-color:#6f3;}
-		.banner_2{background-color:#794;}
-		.banner_3{background-color:#875;}
-		.banner_4{background-color:#926;}
+		.banner_box>li:nth-child(2n){background-color: #fac;}
+		.banner_box>li:nth-child(2n-1){background-color: #ca4;}
 
 	.indicator{width: 50%; height: 1.5rem; position: absolute; bottom: 1rem;
 		left:5%;}
