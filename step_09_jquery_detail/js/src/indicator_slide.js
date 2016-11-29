@@ -19,7 +19,7 @@ var indicator = $('.indicator');
 		bannerBox.width(bannerBoxWidthSet +'px'); // 배너의 박스 넓이
 		bannerBox.find('li:last').clone().prependTo(bannerBox);
 		indicator.find('li:last').clone().prependTo(indicator);
-		
+
 		// indicator 처음 복제된 버튼 숨기기, 1번 버튼색처리
 		indicator.find('li:first').hide();
 		indicator.find('li').eq(1).css({backgroundColor:'#f4a'});
@@ -34,6 +34,23 @@ var indicator = $('.indicator');
     $this.css({backgroundColor:'#f4a'});
     indicator.find('li').not($this).css({backgroundColor:'#fff'});
     bannerBox.stop().animate({marginLeft:-100 * index +'%'});
+	});
+
+// $('lbtn') 클릭시 배너 이동
+var lbtn = $('.lbtn');
+	lbtn.on('click', function(e) {
+		e.preventDefault();
+		var bannerBoxMargin = parseInt(bannerBox.css('marginLeft'));
+		bannerBox.stop().animate({marginLeft:'+='+ slideBannerWidth});
+	});
+
+
+// $('rbtn') 클릭시 배너 이동
+var rbtn = $('.rbtn');
+	rbtn.on('click', function(e) {
+		e.preventDefault();
+		var bannerBoxMargin = parseInt(bannerBox.css('marginLeft'));
+		bannerBox.stop().animate({marginLeft:'-='+ slideBannerWidth});
 	});
 
 
