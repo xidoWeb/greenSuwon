@@ -1,0 +1,27 @@
+/* indicator_slide.css */
+
+#wrap{width:960px; height:auto; margin:0 auto; background-color:#fdfdfd;}
+h1{width: 100%; box-sizing:border-box; padding: 1rem; font-size: 2rem;
+	border-bottom:1px solid #333;}
+
+#slideBanner{width: 100%; height: 500px; background-color: #afc; 
+						position: relative;}
+	.btn{width: 100%; height: 0; position: absolute; top: 50%; 
+		margin-top: -80px; left: 0; z-index: 100;}
+	.btn>button{width: 100px; height: 160px; transition:all 0.5s;
+		font-size: 5rem; font-weight: bold; background-color:transparent;}
+	.btn>button:hover{background-color: #777; color:#fff;}
+		.lbtn{float: left;}
+		.rbtn{float: right;}
+	.banner_box{/* width: 400%; */ height: 100%; margin-left: -100%;}
+	.banner_box>li{/* width:calc(100% / 4); */ height: 100%; float: left;
+		font-size: 5rem;}
+		.banner_1{background-color:#6f3;}
+		.banner_2{background-color:#794;}
+		.banner_3{background-color:#875;}
+		.banner_4{background-color:#926;}
+
+	.indicator{width: 50%; height: 1.5rem; position: absolute; bottom: 1rem;
+		left:5%;}
+	.indicator>li{width: 1.5rem; height: 1.5rem; float: left;
+	 margin-right: 2rem; background-color: #fff; text-align: center;line-height:1.5; border-radius:1rem; cursor:pointer;}
